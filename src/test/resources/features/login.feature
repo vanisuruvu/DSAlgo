@@ -2,22 +2,29 @@ Feature: Login
 
   Background: 
     Given user opens browser and launch the url"https://dsportalapp.herokuapp.com/"
-    When user clicks on "Get started" button
-    And clicks on "signIn" link
+    When user click on "Get started" button
+    And clicks on signin link
     Then user will successfuly able to see signIn page
-
-  Scenario: 
-    When user clicks on Register link on signIn page
-    Then user should be successfully redirected to register page
-
+#@login
+ # Scenario: 
+   
+@login
   Scenario Outline: signIn validation with valid inputs
+   When user clicks on Register link on signIn page
+    Then user should be successfully redirected to register page
+   When user clicks on Register link on signIn page
+    Then user should be successfully redirected to register page
+    When user clicks on signin link
     When user enters valid "<username>" "<password>"
+    And user will click on login button
     Then user should be successfully able to see the messgae "You are logged in"
+    Then user will click on logOut button
 
     Examples: 
       | username        | password  |
-      | swati@gmail.com | swati@123 |
-      | abc@gmail.com   | abcde@123 |
+      | abcde12ab3@gmail.com | pranav@12 |
+     | swatiii1ab23@gmail.com|prathap@12|
+     
 
   Scenario: signIn validation with inValid inputs
     When user click on signIn without entering anything on textbox
