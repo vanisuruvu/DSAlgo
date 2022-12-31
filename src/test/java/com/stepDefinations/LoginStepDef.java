@@ -75,5 +75,44 @@ public class LoginStepDef extends BaseClass {
 	public void user_will_click_on_log_out_button() throws InterruptedException {
 	    loginPage.clickSignOutLink();
 	}
+	@Then("user will successfully loggesOut")
+	public void user_will_successfully_logges_out() {
+		String actualText = loginPage.validateSuccessLogOutMsg();
+		   Assert.assertEquals(actualText, "Logged out successfully");
+	}
+	
+	@When("user click on signIn without entering anything on textbox")
+	public void user_click_on_sign_in_without_entering_anything_on_textbox() throws InterruptedException {
+	   loginPage.clickLogInBtn();
+	}
+	@Then("user should get error msg {string}")
+	public void user_should_get_error_msg(String errorMsg) throws InterruptedException {
+		
+		Assert.assertEquals(loginPage.validationEmptyFieldUserName(), "Please fill out this field.");
+	}
+	
+	@When("user enters  {string}  and click on SignIn")
+	public void user_enters_and_click_on_sign_in(String username) throws Exception {
+	    loginPage.enterUserName(username);
+	    loginPage.clickLogInBtn();
+	}
+	
+	@Then("user should be able to see error message {string} below password field.")
+	public void user_should_be_able_to_see_error_message_below_password_field(String username) throws InterruptedException {
+		Assert.assertEquals(loginPage.validationEmptyFieldPassword(), "Please fill out this field.");
+	}
+	
+	@When("user enters invalid {string} {string} and click on SignIn")
+	public void user_enters_invalid_and_click_on_sign_in(String username, String password) throws InterruptedException {
+		loginPage.enterUserName(username);
+		loginPage.enterPassword(password);
+		loginPage.clickLogInBtn();
+	   
+	}
+	@Then("user should be able to see error message {string}")
+	public void user_should_be_able_to_see_error_message(String text) {
+		 Assert.assertEquals(text, "Invalid Username and Password");
+	    
+	}
 
 }

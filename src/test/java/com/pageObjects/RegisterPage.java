@@ -16,9 +16,6 @@ public class RegisterPage {
 
 	WebDriver driver = Helper.getDriver();
 	
-	@FindBy(xpath = "//button[text()='Get Started']")
-	@CacheLookup
-	WebElement getStartedBtn;
 	
 	@FindBy(linkText = "Register")
 	@CacheLookup
@@ -48,10 +45,18 @@ public class RegisterPage {
 	@CacheLookup
 	WebElement signOutLink;
 	
-	public void clickGetStarted() throws InterruptedException {
-		Utils.webClick(getStartedBtn);
-		Thread.sleep(2000);
-	}
+	@FindBy(partialLinkText =  "fill out this")
+	@CacheLookup
+	WebElement alert;
+	
+	@FindBy(xpath = "//input[@name='username']")
+	@CacheLookup
+	WebElement message;
+	
+	@FindBy(xpath = "//div[contains(text(),'password_mismatch:The two password fields didn’t match.')]")
+	@CacheLookup
+	WebElement passwordMismatch;
+	
 	
 	public void clickRegisterLink() throws Exception {
 		PageFactory.initElements(driver, this);
@@ -91,6 +96,36 @@ public class RegisterPage {
 		
 	}
 	
-
-
+	public String validationEmptyFields() throws InterruptedException {
+		Thread.sleep(3000);
+		String mesg=usernameText.getAttribute("validationMessage");
+		System.out.println(mesg);
+		return mesg;
+	}
+	public String validationEmptyFieldspassword1() throws InterruptedException {
+		Thread.sleep(3000);
+		String mesg=passwordText1.getAttribute("validationMessage");
+		System.out.println(mesg);
+		return mesg;
+	}
+	public String validationEmptyFieldspassword2() throws InterruptedException {
+		Thread.sleep(3000);
+		String mesg=passwordText2.getAttribute("validationMessage");
+		System.out.println(mesg);
+		return mesg;
+	}
+	
+	public String validationPwdMismatch() throws InterruptedException {
+		Thread.sleep(3000);
+		String pwd1=passwordText1.getText();
+		String pwd2=passwordText2.getText();
+		String msg = "";
+		if(pwd1 != pwd2) {
+			 msg=passwordMismatch.getText();
+			
+		}
+		return msg;
+		
+		
+	}
 }

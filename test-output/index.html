@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\xunee\AppData\Local\Temp\testng-eclipse-36703274\testng-customsuite.xml</span>
+                    <span>C:\Users\xunee\AppData\Local\Temp\testng-eclipse-587997410\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">16 methods, 1 failed,   15 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;User validate Max Consecutive Ones page&quot;, &quot;Optional[Array]&quot;)">runScenario("User validate Max Consecutive Ones page", "Optional[Array]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,12 +117,77 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.runner.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;signIn validation with valid inputs&quot;, &quot;Optional[Login]&quot;)">runScenario("signIn validation with valid inputs", "Optional[Login]")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;&quot;, &quot;Optional[Data Structure Intro]&quot;)">runScenario("", "Optional[Data Structure Intro]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.runner.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;signIn validation with valid inputs&quot;, &quot;Optional[Login]&quot;)">runScenario("signIn validation with valid inputs", "Optional[Login]")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;User validate Types of Linked List page&quot;, &quot;Optional[LinkedList]&quot;)">runScenario("User validate Types of Linked List page", "Optional[LinkedList]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;validating Linked List introduction page&quot;, &quot;Optional[LinkedList]&quot;)">runScenario("validating Linked List introduction page", "Optional[LinkedList]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;User validate Array Page&quot;, &quot;Optional[Array]&quot;)">runScenario("User validate Array Page", "Optional[Array]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;User validate Search the array page&quot;, &quot;Optional[Array]&quot;)">runScenario("User validate Search the array page", "Optional[Array]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;User validate Insertion page&quot;, &quot;Optional[LinkedList]&quot;)">runScenario("User validate Insertion page", "Optional[LinkedList]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;User validate Implement Linked List in Python page&quot;, &quot;Optional[LinkedList]&quot;)">runScenario("User validate Implement Linked List in Python page", "Optional[LinkedList]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;User validate Traversal page&quot;, &quot;Optional[LinkedList]&quot;)">runScenario("User validate Traversal page", "Optional[LinkedList]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;User validate Basic Operations in list page&quot;, &quot;Optional[Array]&quot;)">runScenario("User validate Basic Operations in list page", "Optional[Array]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;User validate Even Number page&quot;, &quot;Optional[Array]&quot;)">runScenario("User validate Even Number page", "Optional[Array]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;User validate Creating Linked List page&quot;, &quot;Optional[LinkedList]&quot;)">runScenario("User validate Creating Linked List page", "Optional[LinkedList]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;User validate Sorted Array page&quot;, &quot;Optional[Array]&quot;)">runScenario("User validate Sorted Array page", "Optional[Array]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;User validate Applications of Array page&quot;, &quot;Optional[Array]&quot;)">runScenario("User validate Applications of Array page", "Optional[Array]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;User validate Deletion page&quot;, &quot;Optional[LinkedList]&quot;)">runScenario("User validate Deletion page", "Optional[LinkedList]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.runner.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;User validate Arrays using list page&quot;, &quot;Optional[Array]&quot;)">runScenario("User validate Arrays using list page", "Optional[Array]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -123,6 +202,56 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.runner.Runner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User validate Max Consecutive Ones page&quot;, &quot;Optional[Array]&quot;)">
+                  </a> <!-- runScenario("User validate Max Consecutive Ones page", "Optional[Array]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User validate Max Consecutive Ones page","Optional[Array]")</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=108.0.5359.125)
+Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d46c4cd9eeca48babacb76acdcecf3d2, sendKeysToElement {id=ff1aa201-9598-42aa-b3cc-039aadca783f, value=[Ljava.lang.CharSequence;@2e929182}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\xunee\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62174}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62174/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (d46c4cd9eeca48babacb76acdcecf3d2)] -&gt; xpath: //form/div/div/div/textarea]
+Session ID: d46c4cd9eeca48babacb76acdcecf3d2
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at jdk.internal.reflect.GeneratedMethodAccessor96.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy28.sendKeys(Unknown Source)
+	at com.pageObjects.ArraysPage.clearPythoncode(ArraysPage.java:108)
+	at com.stepDefinations.ArraysStepDef.user_clear_the_text_and_enter_the_examples_python_code_print(ArraysStepDef.java:131)
+	at ✽.user clear the text and enter the examples Python code print(&quot;Max Consecutive Ones&quot;)(file:///C:/Users/xunee/eclipse-workspace-2022/ds-algo/src/test/resources/features/arrays.feature:75)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -131,20 +260,150 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;signIn validation with valid inputs&quot;, &quot;Optional[Login]&quot;)">
-                  </a> <!-- runScenario("signIn validation with valid inputs", "Optional[Login]") -->
+                  <a name="runScenario(&quot;&quot;, &quot;Optional[Data Structure Intro]&quot;)">
+                  </a> <!-- runScenario("", "Optional[Data Structure Intro]") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("signIn validation with valid inputs","Optional[Login]")</span>
+                  <span class="parameters">("","Optional[Data Structure Intro]")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;signIn validation with valid inputs&quot;, &quot;Optional[Login]&quot;)">
-                  </a> <!-- runScenario("signIn validation with valid inputs", "Optional[Login]") -->
+                  <a name="runScenario(&quot;User validate Types of Linked List page&quot;, &quot;Optional[LinkedList]&quot;)">
+                  </a> <!-- runScenario("User validate Types of Linked List page", "Optional[LinkedList]") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("signIn validation with valid inputs","Optional[Login]")</span>
+                  <span class="parameters">("User validate Types of Linked List page","Optional[LinkedList]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;validating Linked List introduction page&quot;, &quot;Optional[LinkedList]&quot;)">
+                  </a> <!-- runScenario("validating Linked List introduction page", "Optional[LinkedList]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("validating Linked List introduction page","Optional[LinkedList]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User validate Array Page&quot;, &quot;Optional[Array]&quot;)">
+                  </a> <!-- runScenario("User validate Array Page", "Optional[Array]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User validate Array Page","Optional[Array]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User validate Search the array page&quot;, &quot;Optional[Array]&quot;)">
+                  </a> <!-- runScenario("User validate Search the array page", "Optional[Array]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User validate Search the array page","Optional[Array]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User validate Insertion page&quot;, &quot;Optional[LinkedList]&quot;)">
+                  </a> <!-- runScenario("User validate Insertion page", "Optional[LinkedList]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User validate Insertion page","Optional[LinkedList]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User validate Implement Linked List in Python page&quot;, &quot;Optional[LinkedList]&quot;)">
+                  </a> <!-- runScenario("User validate Implement Linked List in Python page", "Optional[LinkedList]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User validate Implement Linked List in Python page","Optional[LinkedList]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User validate Traversal page&quot;, &quot;Optional[LinkedList]&quot;)">
+                  </a> <!-- runScenario("User validate Traversal page", "Optional[LinkedList]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User validate Traversal page","Optional[LinkedList]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User validate Basic Operations in list page&quot;, &quot;Optional[Array]&quot;)">
+                  </a> <!-- runScenario("User validate Basic Operations in list page", "Optional[Array]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User validate Basic Operations in list page","Optional[Array]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User validate Even Number page&quot;, &quot;Optional[Array]&quot;)">
+                  </a> <!-- runScenario("User validate Even Number page", "Optional[Array]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User validate Even Number page","Optional[Array]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User validate Creating Linked List page&quot;, &quot;Optional[LinkedList]&quot;)">
+                  </a> <!-- runScenario("User validate Creating Linked List page", "Optional[LinkedList]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User validate Creating Linked List page","Optional[LinkedList]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User validate Sorted Array page&quot;, &quot;Optional[Array]&quot;)">
+                  </a> <!-- runScenario("User validate Sorted Array page", "Optional[Array]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User validate Sorted Array page","Optional[Array]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User validate Applications of Array page&quot;, &quot;Optional[Array]&quot;)">
+                  </a> <!-- runScenario("User validate Applications of Array page", "Optional[Array]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User validate Applications of Array page","Optional[Array]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User validate Deletion page&quot;, &quot;Optional[LinkedList]&quot;)">
+                  </a> <!-- runScenario("User validate Deletion page", "Optional[LinkedList]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User validate Deletion page","Optional[LinkedList]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User validate Arrays using list page&quot;, &quot;Optional[Array]&quot;)">
+                  </a> <!-- runScenario("User validate Arrays using list page", "Optional[Array]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User validate Arrays using list page","Optional[Array]")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -154,7 +413,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\xunee\AppData\Local\Temp\testng-eclipse-36703274\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\xunee\AppData\Local\Temp\testng-eclipse-587997410\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -211,15 +470,71 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(16);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.runner.Runner')
-data.setCell(0, 3, 40912);
+data.setCell(0, 3, 22711);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'com.runner.Runner')
-data.setCell(1, 3, 36588);
+data.setCell(1, 3, 16320);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'com.runner.Runner')
+data.setCell(2, 3, 4107);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'com.runner.Runner')
+data.setCell(3, 3, 4037);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'com.runner.Runner')
+data.setCell(4, 3, 3975);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'com.runner.Runner')
+data.setCell(5, 3, 3960);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'com.runner.Runner')
+data.setCell(6, 3, 3907);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'com.runner.Runner')
+data.setCell(7, 3, 3904);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'com.runner.Runner')
+data.setCell(8, 3, 3656);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'com.runner.Runner')
+data.setCell(9, 3, 3448);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'com.runner.Runner')
+data.setCell(10, 3, 3379);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'com.runner.Runner')
+data.setCell(11, 3, 2222);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'com.runner.Runner')
+data.setCell(12, 3, 2079);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'com.runner.Runner')
+data.setCell(13, 3, 1959);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'com.runner.Runner')
+data.setCell(14, 3, 1778);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'runScenario')
+data.setCell(15, 2, 'com.runner.Runner')
+data.setCell(15, 3, 1678);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -252,20 +567,78 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.runner.Runner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@5882b202)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@60ee7a51)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("signIn validation with valid inputs", "Optional[Login]")</span>
-                <span class="method-start">662 ms</span>
+                <span class="method-name">runScenario("", "Optional[Data Structure Intro]")</span>
+                <span class="method-start">713 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("signIn validation with valid inputs", "Optional[Login]")</span>
-                <span class="method-start">41574 ms</span>
+                <span class="method-name">runScenario("User validate Array Page", "Optional[Array]")</span>
+                <span class="method-start">23431 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User validate Arrays using list page", "Optional[Array]")</span>
+                <span class="method-start">27089 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User validate Basic Operations in list page", "Optional[Array]")</span>
+                <span class="method-start">29171 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User validate Applications of Array page", "Optional[Array]")</span>
+                <span class="method-start">31135 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User validate Search the array page", "Optional[Array]")</span>
+                <span class="method-start">33358 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("User validate Max Consecutive Ones page", "Optional[Array]")</span>
+                <span class="method-start">35038 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User validate Even Number page", "Optional[Array]")</span>
+                <span class="method-start">38486 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User validate Sorted Array page", "Optional[Array]")</span>
+                <span class="method-start">54808 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("validating Linked List introduction page", "Optional[LinkedList]")</span>
+                <span class="method-start">56589 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User validate Creating Linked List page", "Optional[LinkedList]")</span>
+                <span class="method-start">59972 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User validate Types of Linked List page", "Optional[LinkedList]")</span>
+                <span class="method-start">63935 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User validate Implement Linked List in Python page", "Optional[LinkedList]")</span>
+                <span class="method-start">67973 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User validate Traversal page", "Optional[LinkedList]")</span>
+                <span class="method-start">71949 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User validate Insertion page", "Optional[LinkedList]")</span>
+                <span class="method-start">75857 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User validate Deletion page", "Optional[LinkedList]")</span>
+                <span class="method-start">79763 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">78166 ms</span>
+                <span class="method-start">83880 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

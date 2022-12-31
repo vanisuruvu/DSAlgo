@@ -40,6 +40,12 @@ public class LoginPage {
 	@FindBy (xpath ="//div[contains(text(),'You are logged in')]")
 	WebElement successfulLoginMsg;
 	
+	@FindBy(xpath="//div[contains(text(),'Logged out successfully')]")
+	WebElement successfulLogOutMsg;
+	
+	@FindBy(xpath="//div[contains(text(),'Invalid Username and Password')]")
+	WebElement invalidCredMsg;
+	
 	 
 	
 	 public void signInClick() throws Exception {
@@ -54,7 +60,7 @@ public class LoginPage {
 		    }
 	 
 	 public void registrationLinkClick() throws Exception {
-		 Thread.sleep(2000);
+		 
 		 Utils.webClick(registerLink);
 		    }
 	 
@@ -89,6 +95,30 @@ public class LoginPage {
 		 String text = successfulLoginMsg.getText();
 			return text;
 		    }
+	 public String validateSuccessLogOutMsg() {
+		 String text = successfulLogOutMsg.getText();
+			return text;
+		    }
+	 
+		public String validationEmptyFieldUserName() throws InterruptedException {
+			Thread.sleep(3000);
+			String message = usernameTxtBox.getAttribute("validationMessage");
+			System.out.println(message);
+			return message;
+		}
+		
+		public String validationEmptyFieldPassword() throws InterruptedException {
+			Thread.sleep(3000);
+			String message = passowrdTxtBox.getAttribute("validationMessage");
+			System.out.println(message);
+			return message;
+		}
+		public String validateInvalidCredMsg() {
+			 String text = invalidCredMsg.getText();
+				return text;
+			    }
+		
+
 	 
 	 
 	

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>15/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Dec 23 11:21:25 CST 2022</td>
+<td>Started on:</td><td>Sat Dec 31 08:20:15 CST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>78 seconds (78237 ms)</td>
+<tr><td>Total time:</td><td>83 seconds (83953 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,81 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Max Consecutive Ones page", "Optional[Array]"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=108.0.5359.125)
+Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d46c4cd9eeca48babacb76acdcecf3d2, sendKeysToElement {id=ff1aa201-9598-42aa-b3cc-039aadca783f, value=[Ljava.lang.CharSequence;@2e929182}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\xunee\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62174}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62174/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (d46c4cd9eeca48babacb76acdcecf3d2)] -&gt; xpath: //form/div/div/div/textarea]
+Session ID: d46c4cd9eeca48babacb76acdcecf3d2
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at jdk.internal.reflect.GeneratedMethodAccessor96.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy28.sendKeys(Unknown Source)
+	at com.pageObjects.ArraysPage.clearPythoncode(ArraysPage.java:108)
+	at com.stepDefinations.ArraysStepDef.user_clear_the_text_and_enter_the_examples_python_code_print(ArraysStepDef.java:131)
+	at ?.user clear the text and enter the examples Python code print(&quot;Max Consecutive Ones&quot;)(file:///C:/Users/xunee/eclipse-workspace-2022/ds-algo/src/test/resources/features/arrays.feature:75)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2141984988", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2141984988'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=108.0.5359.125)
+Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d46c4cd9eeca48babacb76acdcecf3d2, sendKeysToElement {id=ff1aa201-9598-42aa-b3cc-039aadca783f, value=[Ljava.lang.CharSequence;@2e929182}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\xunee\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62174}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62174/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (d46c4cd9eeca48babacb76acdcecf3d2)] -&gt; xpath: //form/div/div/div/textarea]
+Session ID: d46c4cd9eeca48babacb76acdcecf3d2
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at jdk.internal.reflect.GeneratedMethodAccessor96.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy28.sendKeys(Unknown Source)
+	at com.pageObjects.ArraysPage.clearPythoncode(ArraysPage.java:108)
+	at com.stepDefinations.ArraysStepDef.user_clear_the_text_and_enter_the_examples_python_code_print(ArraysStepDef.java:131)
+	at ?.user clear the text and enter the examples Python code print(&quot;Max Consecutive Ones&quot;)(file:///C:/Users/xunee/eclipse-workspace-2022/ds-algo/src/test/resources/features/arrays.feature:75)
+</pre></div></td>
+<td>3</td>
+<td>com.runner.Runner@7d900ecf</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,14 +151,79 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "signIn validation with valid inputs", "Optional[Login]"</td>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Optional[Data Structure Intro]"</td>
 <td></td>
-<td>40</td>
+<td>22</td>
 <td>com.runner.Runner@7d900ecf</td></tr>
 <tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "signIn validation with valid inputs", "Optional[Login]"</td>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Types of Linked List page", "Optional[LinkedList]"</td>
 <td></td>
-<td>36</td>
+<td>4</td>
+<td>com.runner.Runner@7d900ecf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validating Linked List introduction page", "Optional[LinkedList]"</td>
+<td></td>
+<td>3</td>
+<td>com.runner.Runner@7d900ecf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Array Page", "Optional[Array]"</td>
+<td></td>
+<td>3</td>
+<td>com.runner.Runner@7d900ecf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Search the array page", "Optional[Array]"</td>
+<td></td>
+<td>1</td>
+<td>com.runner.Runner@7d900ecf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Insertion page", "Optional[LinkedList]"</td>
+<td></td>
+<td>3</td>
+<td>com.runner.Runner@7d900ecf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Implement Linked List in Python page", "Optional[LinkedList]"</td>
+<td></td>
+<td>3</td>
+<td>com.runner.Runner@7d900ecf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Traversal page", "Optional[LinkedList]"</td>
+<td></td>
+<td>3</td>
+<td>com.runner.Runner@7d900ecf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Basic Operations in list page", "Optional[Array]"</td>
+<td></td>
+<td>1</td>
+<td>com.runner.Runner@7d900ecf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Even Number page", "Optional[Array]"</td>
+<td></td>
+<td>16</td>
+<td>com.runner.Runner@7d900ecf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Creating Linked List page", "Optional[LinkedList]"</td>
+<td></td>
+<td>3</td>
+<td>com.runner.Runner@7d900ecf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Sorted Array page", "Optional[Array]"</td>
+<td></td>
+<td>1</td>
+<td>com.runner.Runner@7d900ecf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Applications of Array page", "Optional[Array]"</td>
+<td></td>
+<td>2</td>
+<td>com.runner.Runner@7d900ecf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Deletion page", "Optional[LinkedList]"</td>
+<td></td>
+<td>4</td>
+<td>com.runner.Runner@7d900ecf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Arrays using list page", "Optional[Array]"</td>
+<td></td>
+<td>2</td>
 <td>com.runner.Runner@7d900ecf</td></tr>
 </table><p>
 </body>
