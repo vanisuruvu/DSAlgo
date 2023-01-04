@@ -7,8 +7,10 @@ import io.qameta.allure.Allure;
 
 
 import java.io.ByteArrayInputStream;
+import java.io.IOException;
 import java.util.List;
 
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -51,7 +53,6 @@ public class ArraysStepDef extends BaseClass{
 	public void user_enter_the_python_code(io.cucumber.datatable.DataTable pythonCode) throws InterruptedException {
 		arrayPage=new ArraysPage(Helper.getDriver());
 		List<List<String>>data=pythonCode.cells();
-		arrayPage.clearPythoncode();
 		arrayPage.enterPythonCode(data.get(0).get(0));
 	}
 	
@@ -101,12 +102,11 @@ public class ArraysStepDef extends BaseClass{
 		arrayPage.clickOnSearchTheArrayLink();
 	}
 	
-	@When("user clear the text and enter the Python code print\\({string})")
-	public void user_clear_the_text_and_enter_the_python_code_print(String pythonCode) throws InterruptedException {
-		arrayPage= new ArraysPage(Helper.getDriver());
-		arrayPage.clearPythoncode();
-		arrayPage.enterPythonCode(pythonCode);
-	}
+//	@When("user clear the text and enter the Python code print\\({string})")
+//	public void user_clear_the_text_and_enter_the_python_code_print(String sheetName, int rowNumber) throws InterruptedException, InvalidFormatException, IOException {
+//		arrayPage= new ArraysPage(Helper.getDriver());
+//		arrayPage.enterCodePractice(sheetName, rowNumber);
+//	}
 	
 	@When("user click on Max Consecutive Ones")
 	public void user_click_on_max_consecutive_ones() {
@@ -126,10 +126,15 @@ public class ArraysStepDef extends BaseClass{
 		arrayPage.clickOnSortedArrayLink();
 	}
 	
-	@When("^user clear the text and enter the examples Python code (.*)$")
-	public void user_clear_the_text_and_enter_the_examples_python_code_print(String PythonCode) throws InterruptedException {
-		arrayPage.clearPythoncode();
-		System.out.println(PythonCode);
-		arrayPage.enterPythonCode(PythonCode);
+//	@When("^user clear the text and enter the examples Python code (.*)$")
+//	public void user_clear_the_text_and_enter_the_examples_python_code_print(String PythonCode) throws InterruptedException {
+//		System.out.println(PythonCode);
+//		arrayPage.enterCodePractice(s);
+//	}
+	
+	@When("user clear the text and enter the Python code in tryEditor from sheet {string} and {int}")
+	public void user_clear_the_text_and_enter_the_python_code_in_try_editor_from_sheet_and(String sheetName, Integer rowNumber) throws InvalidFormatException, IOException {
+		arrayPage= new ArraysPage(Helper.getDriver());
+		arrayPage.enterCodePractice(sheetName, rowNumber);
 	}
 }

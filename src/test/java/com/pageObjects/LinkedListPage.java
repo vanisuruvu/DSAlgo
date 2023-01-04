@@ -70,11 +70,9 @@ public class LinkedListPage extends BaseClass
 		Utils.webClick(tryHereBtn); 
 		}*/
 		
-		public void enterCode(String pythonCode) throws InterruptedException  {
-			Thread.sleep(2000);
-			textEditor.sendKeys(pythonCode);
-		}
-		
+		public void enterCode(String pythonCode) throws InterruptedException {
+			Utils.enterPythonCode(textEditor, pythonCode);
+		} 
 
 		public void clickCreatingLinkedListLink() {
 			Utils.webClick(creatingLinkListLink);

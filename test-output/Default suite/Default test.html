@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>15/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>31/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Dec 31 08:20:15 CST 2022</td>
+<td>Started on:</td><td>Wed Jan 04 12:04:35 EST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>83 seconds (83953 ms)</td>
+<tr><td>Total time:</td><td>200 seconds (200296 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,71 +76,125 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Max Consecutive Ones page", "Optional[Array]"</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=108.0.5359.125)
-Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d46c4cd9eeca48babacb76acdcecf3d2, sendKeysToElement {id=ff1aa201-9598-42aa-b3cc-039aadca783f, value=[Ljava.lang.CharSequence;@2e929182}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\xunee\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62174}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62174/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (d46c4cd9eeca48babacb76acdcecf3d2)] -&gt; xpath: //form/div/div/div/textarea]
-Session ID: d46c4cd9eeca48babacb76acdcecf3d2
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
-	at jdk.internal.reflect.GeneratedMethodAccessor96.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy28.sendKeys(Unknown Source)
-	at com.pageObjects.ArraysPage.clearPythoncode(ArraysPage.java:108)
-	at com.stepDefinations.ArraysStepDef.user_clear_the_text_and_enter_the_examples_python_code_print(ArraysStepDef.java:131)
-	at ?.user clear the text and enter the examples Python code print(&quot;Max Consecutive Ones&quot;)(file:///C:/Users/xunee/eclipse-workspace-2022/ds-algo/src/test/resources/features/arrays.feature:75)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2141984988", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2141984988'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=108.0.5359.125)
-Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d46c4cd9eeca48babacb76acdcecf3d2, sendKeysToElement {id=ff1aa201-9598-42aa-b3cc-039aadca783f, value=[Ljava.lang.CharSequence;@2e929182}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\xunee\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62174}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62174/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (d46c4cd9eeca48babacb76acdcecf3d2)] -&gt; xpath: //form/div/div/div/textarea]
-Session ID: d46c4cd9eeca48babacb76acdcecf3d2
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
-	at jdk.internal.reflect.GeneratedMethodAccessor96.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy28.sendKeys(Unknown Source)
-	at com.pageObjects.ArraysPage.clearPythoncode(ArraysPage.java:108)
-	at com.stepDefinations.ArraysStepDef.user_clear_the_text_and_enter_the_examples_python_code_print(ArraysStepDef.java:131)
-	at ?.user clear the text and enter the examples Python code print(&quot;Max Consecutive Ones&quot;)(file:///C:/Users/xunee/eclipse-workspace-2022/ds-algo/src/test/resources/features/arrays.feature:75)
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with invalid inputs/  password format all numeric", "Optional[Register]"</td>
+<td><div><pre>java.lang.AssertionError: expected [please enter valid password format] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at com.stepDefinations.RegisterStepDef.user_should_get_enter_valid_input_error_message(RegisterStepDef.java:163)
+	at ✽.user should get enter valid input error message &quot;please enter valid password format&quot;(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/2register.feature:89)
+</pre></div><a href='#' onClick='toggleBox("stack-trace743893925", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace743893925'><pre>java.lang.AssertionError: expected [please enter valid password format] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at com.stepDefinations.RegisterStepDef.user_should_get_enter_valid_input_error_message(RegisterStepDef.java:163)
+	at ✽.user should get enter valid input error message &quot;please enter valid password format&quot;(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/2register.feature:89)
 </pre></div></td>
 <td>3</td>
-<td>com.runner.Runner@7d900ecf</td></tr>
+<td>com.runner.Runner@1ce24091</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with invalid inputs/ password format less than eight characters", "Optional[Register]"</td>
+<td><div><pre>java.lang.AssertionError: expected [password should contain atleast eight characters.] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at com.stepDefinations.RegisterStepDef.user_should_get_password_atleast_eight_char_error_message(RegisterStepDef.java:149)
+	at ✽.user should get password atleast eight char error message &quot;password should contain atleast eight characters.&quot;(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/2register.feature:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace807570919", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace807570919'><pre>java.lang.AssertionError: expected [password should contain atleast eight characters.] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at com.stepDefinations.RegisterStepDef.user_should_get_password_atleast_eight_char_error_message(RegisterStepDef.java:149)
+	at ✽.user should get password atleast eight char error message &quot;password should contain atleast eight characters.&quot;(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/2register.feature:81)
+</pre></div></td>
+<td>3</td>
+<td>com.runner.Runner@1ce24091</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with invalid inputs/ similar fields", "Optional[Register]"</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4ea4ba9a310ec5b4e49120dc895542fd, getElementText {id=b9ac940a-78ed-4c6c-a182-2a3582ee5ed0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\vanis\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61083}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61083/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (4ea4ba9a310ec5b4e49120dc895542fd)] -&gt; id: id_username]
+Session ID: 4ea4ba9a310ec5b4e49120dc895542fd
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.getText(Unknown Source)
+	at com.pageObjects.RegisterPage.validatecompare(RegisterPage.java:143)
+	at com.stepDefinations.RegisterStepDef.user_should_get_password_not_similar_to_username_error_message(RegisterStepDef.java:175)
+	at ✽.user should get password not similar to username error message &quot;password can not be similar as username&quot;(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/2register.feature:98)
+</pre></div><a href='#' onClick='toggleBox("stack-trace481839538", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace481839538'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4ea4ba9a310ec5b4e49120dc895542fd, getElementText {id=b9ac940a-78ed-4c6c-a182-2a3582ee5ed0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\vanis\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61083}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61083/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (4ea4ba9a310ec5b4e49120dc895542fd)] -&gt; id: id_username]
+Session ID: 4ea4ba9a310ec5b4e49120dc895542fd
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.getText(Unknown Source)
+	at com.pageObjects.RegisterPage.validatecompare(RegisterPage.java:143)
+	at com.stepDefinations.RegisterStepDef.user_should_get_password_not_similar_to_username_error_message(RegisterStepDef.java:175)
+	at ✽.user should get password not similar to username error message &quot;password can not be similar as username&quot;(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/2register.feature:98)
+</pre></div></td>
+<td>3</td>
+<td>com.runner.Runner@1ce24091</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -151,80 +205,160 @@ Session ID: d46c4cd9eeca48babacb76acdcecf3d2
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Optional[Data Structure Intro]"</td>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with invalid inputs/blank fields", "Optional[Register]"</td>
 <td></td>
-<td>22</td>
-<td>com.runner.Runner@7d900ecf</td></tr>
+<td>3</td>
+<td>com.runner.Runner@1ce24091</td></tr>
 <tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Types of Linked List page", "Optional[LinkedList]"</td>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Traversal page", "Optional[LinkedList]"</td>
 <td></td>
-<td>4</td>
-<td>com.runner.Runner@7d900ecf</td></tr>
+<td>1</td>
+<td>com.runner.Runner@1ce24091</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validation of Start Page", "Optional[Start page]"</td>
+<td></td>
+<td>10</td>
+<td>com.runner.Runner@1ce24091</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "signIn validation with inValid inputs", "Optional[Login]"</td>
+<td></td>
+<td>11</td>
+<td>com.runner.Runner@1ce24091</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Implement Linked List in Python page", "Optional[LinkedList]"</td>
+<td></td>
+<td>1</td>
+<td>com.runner.Runner@1ce24091</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with invalid inputs/blank fields", "Optional[Register]"</td>
+<td></td>
+<td>3</td>
+<td>com.runner.Runner@1ce24091</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "signIn validation with valid inputs", "Optional[Login]"</td>
+<td></td>
+<td>32</td>
+<td>com.runner.Runner@1ce24091</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Creating Linked List page", "Optional[LinkedList]"</td>
+<td></td>
+<td>1</td>
+<td>com.runner.Runner@1ce24091</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with invalid inputs/blank fields", "Optional[Register]"</td>
+<td></td>
+<td>3</td>
+<td>com.runner.Runner@1ce24091</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with invalid inputs/blank fields", "Optional[Register]"</td>
+<td></td>
+<td>3</td>
+<td>com.runner.Runner@1ce24091</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Basic Operations in list page", "Optional[Array]"</td>
+<td></td>
+<td>0</td>
+<td>com.runner.Runner@1ce24091</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with invalid inputs/blank fields", "Optional[Register]"</td>
+<td></td>
+<td>3</td>
+<td>com.runner.Runner@1ce24091</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "signIn validation with valid inputs", "Optional[Login]"</td>
+<td></td>
+<td>32</td>
+<td>com.runner.Runner@1ce24091</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with invalid inputs", "Optional[Register]"</td>
+<td></td>
+<td>3</td>
+<td>com.runner.Runner@1ce24091</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "signIn validation with inValid inputs", "Optional[Login]"</td>
+<td></td>
+<td>12</td>
+<td>com.runner.Runner@1ce24091</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Even Number page", "Optional[Array]"</td>
+<td></td>
+<td>1</td>
+<td>com.runner.Runner@1ce24091</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with valid inputs", "Optional[Register]"</td>
+<td></td>
+<td>6</td>
+<td>com.runner.Runner@1ce24091</td></tr>
 <tr>
 <td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validating Linked List introduction page", "Optional[LinkedList]"</td>
 <td></td>
-<td>3</td>
-<td>com.runner.Runner@7d900ecf</td></tr>
+<td>2</td>
+<td>com.runner.Runner@1ce24091</td></tr>
 <tr>
 <td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Array Page", "Optional[Array]"</td>
 <td></td>
-<td>3</td>
-<td>com.runner.Runner@7d900ecf</td></tr>
+<td>2</td>
+<td>com.runner.Runner@1ce24091</td></tr>
 <tr>
 <td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Search the array page", "Optional[Array]"</td>
 <td></td>
 <td>1</td>
-<td>com.runner.Runner@7d900ecf</td></tr>
+<td>com.runner.Runner@1ce24091</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Types of Linked List page", "Optional[LinkedList]"</td>
+<td></td>
+<td>1</td>
+<td>com.runner.Runner@1ce24091</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Optional[Data Structure Intro]"</td>
+<td></td>
+<td>14</td>
+<td>com.runner.Runner@1ce24091</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "signIn validation with inValid inputs", "Optional[Login]"</td>
+<td></td>
+<td>11</td>
+<td>com.runner.Runner@1ce24091</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Applications of Array page", "Optional[Array]"</td>
+<td></td>
+<td>0</td>
+<td>com.runner.Runner@1ce24091</td></tr>
 <tr>
 <td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Insertion page", "Optional[LinkedList]"</td>
 <td></td>
-<td>3</td>
-<td>com.runner.Runner@7d900ecf</td></tr>
+<td>1</td>
+<td>com.runner.Runner@1ce24091</td></tr>
 <tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Implement Linked List in Python page", "Optional[LinkedList]"</td>
-<td></td>
-<td>3</td>
-<td>com.runner.Runner@7d900ecf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Traversal page", "Optional[LinkedList]"</td>
-<td></td>
-<td>3</td>
-<td>com.runner.Runner@7d900ecf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Basic Operations in list page", "Optional[Array]"</td>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Max Consecutive Ones page", "Optional[Array]"</td>
 <td></td>
 <td>1</td>
-<td>com.runner.Runner@7d900ecf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Even Number page", "Optional[Array]"</td>
-<td></td>
-<td>16</td>
-<td>com.runner.Runner@7d900ecf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Creating Linked List page", "Optional[LinkedList]"</td>
-<td></td>
-<td>3</td>
-<td>com.runner.Runner@7d900ecf</td></tr>
+<td>com.runner.Runner@1ce24091</td></tr>
 <tr>
 <td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Sorted Array page", "Optional[Array]"</td>
 <td></td>
 <td>1</td>
-<td>com.runner.Runner@7d900ecf</td></tr>
+<td>com.runner.Runner@1ce24091</td></tr>
 <tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Applications of Array page", "Optional[Array]"</td>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with invalid inputs/ password mismatch", "Optional[Register]"</td>
 <td></td>
-<td>2</td>
-<td>com.runner.Runner@7d900ecf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Deletion page", "Optional[LinkedList]"</td>
-<td></td>
-<td>4</td>
-<td>com.runner.Runner@7d900ecf</td></tr>
+<td>3</td>
+<td>com.runner.Runner@1ce24091</td></tr>
 <tr>
 <td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Arrays using list page", "Optional[Array]"</td>
 <td></td>
-<td>2</td>
-<td>com.runner.Runner@7d900ecf</td></tr>
+<td>0</td>
+<td>com.runner.Runner@1ce24091</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with valid inputs", "Optional[Register]"</td>
+<td></td>
+<td>6</td>
+<td>com.runner.Runner@1ce24091</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Deletion page", "Optional[LinkedList]"</td>
+<td></td>
+<td>1</td>
+<td>com.runner.Runner@1ce24091</td></tr>
 </table><p>
 </body>
 </html>

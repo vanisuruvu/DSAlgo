@@ -1,12 +1,12 @@
 @arrays
 Feature: Array
  
-  #Scenario: Launch the url
-	#Given user open browser and launch the url "https://dsportalapp.herokuapp.com/"
-   # When user click  "Get started" button
-   # And click on signin link
-    #When user enters  "abcde12ab3@gmail.com" "pranav@12"
-    #And user click on login button
+#  Scenario: Launch the url
+#	Given user open browser and launch the url "https://dsportalapp.herokuapp.com/"
+#    When user click  "Get started" button
+#    And click on signin link
+#    When user enters  "abcde12ab3@gmail.com" "pranav@12"
+#    And user click on login button
  
   @scenario_001
   Scenario: User validate Array Page
@@ -60,44 +60,44 @@ Feature: Array
   Scenario Outline: User validate Search the array page
     When user click on Search the array
     And It should navigate to corresponding array page with title "Assessment"
-    When user clear the text and enter the examples Python code <PythonCode>
+    When user clear the text and enter the Python code in tryEditor from sheet "<SheetName>" and <RowNumber>
     And click on array run button
     Then User navigate back
     
   Examples:
   
-      |PythonCode|
-      | print("Search the array NOW") |
+      | SheetName  | RowNumber |
+      | pythonCode |         2 |
 
   Scenario Outline:  User validate Max Consecutive Ones page
     When user click on Max Consecutive Ones
     And It should navigate to corresponding array page with title "Assessment"
-    When user clear the text and enter the examples Python code <PythonCode>
+    When user clear the text and enter the Python code in tryEditor from sheet "<SheetName>" and <RowNumber>
     And click on array run button
     Then User navigate back
     
    Examples:
-     	|PythonCode|
-      | print("Max Consecutive Ones")|
+      | SheetName  | RowNumber |
+      | pythonCode |         4 |
 
   Scenario Outline: User validate Even Number page
     When user click on Find Numbers with Even Number of Digits
     And It should navigate to corresponding array page with title "Assessment"
-    When user clear the text and enter the examples Python code <PythonCode>
+    When user clear the text and enter the Python code in tryEditor from sheet "<SheetName>" and <RowNumber>
     And click on array run button
     Then User navigate back
     
    Examples:
-     	|PythonCode|
-      | print("Even Number") |
+      | SheetName  | RowNumber |
+      | pythonCode |         6 |
 
   Scenario Outline: User validate Sorted Array page
     When user click on Find Numbers with Squares of  a Sorted Array
     And It should navigate to corresponding array page with title "Assessment"
-    When user clear the text and enter the examples Python code <PythonCode>
+    When user clear the text and enter the Python code in tryEditor from sheet "<SheetName>" and <RowNumber>
     And click on array run button
     Then user is navigated to home page "https://dsportalapp.herokuapp.com/home"
  
   Examples:  
-     	|PythonCode|
-      | print("Sorted Array")|
+     	 | SheetName  | RowNumber |
+      | pythonCode |         8 |

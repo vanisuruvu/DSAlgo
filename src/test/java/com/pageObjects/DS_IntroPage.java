@@ -46,9 +46,7 @@ public class DS_IntroPage {
 	}
 	
 	public void enterCode(String pythonCode) throws InterruptedException {
-		Thread.sleep(2000);
-		editor.sendKeys(pythonCode);
-		//editor.sendKeys(Keys.TAB, Keys.SHIFT, Keys.TAB,Keys.SHIFT, pythonCode);
+		Utils.enterPythonCode(textEditor, pythonCode);
 	} 
 	
 	public void clickRunBtn() throws InterruptedException {
