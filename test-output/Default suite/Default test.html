@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>38/8/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jan 05 16:56:30 EST 2023</td>
+<td>Started on:</td><td>Thu Jan 05 17:36:22 EST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>130 seconds (130261 ms)</td>
+<tr><td>Total time:</td><td>124 seconds (124320 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,120 +76,28 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with invalid inputs/ similar fields", "Optional[Register]"</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=108.0.5359.125)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4d9cb3415f602aac1af48f638630493f, getElementText {id=7d80c65d-7946-4e81-82b7-e2ba69979a48}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\vanis\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60152}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60152/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (4d9cb3415f602aac1af48f638630493f)] -&gt; id: id_username]
-Session ID: 4d9cb3415f602aac1af48f638630493f
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:207)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy44.getText(Unknown Source)
-	at com.pageObjects.RegisterPage.validatecompare(RegisterPage.java:143)
-	at com.stepDefinations.RegisterStepDef.user_should_get_password_not_similar_to_username_error_message(RegisterStepDef.java:175)
-	at ✽.user should get password not similar to username error message &quot;password can not be similar as username&quot;(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/2register.feature:98)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1717257246", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1717257246'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=108.0.5359.125)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4d9cb3415f602aac1af48f638630493f, getElementText {id=7d80c65d-7946-4e81-82b7-e2ba69979a48}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\vanis\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60152}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60152/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (4d9cb3415f602aac1af48f638630493f)] -&gt; id: id_username]
-Session ID: 4d9cb3415f602aac1af48f638630493f
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:207)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy44.getText(Unknown Source)
-	at com.pageObjects.RegisterPage.validatecompare(RegisterPage.java:143)
-	at com.stepDefinations.RegisterStepDef.user_should_get_password_not_similar_to_username_error_message(RegisterStepDef.java:175)
-	at ✽.user should get password not similar to username error message &quot;password can not be similar as username&quot;(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/2register.feature:98)
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with invalid inputs/ password format less than eight characters", "Optional[Register]"</td>
+<td><div><pre>java.lang.AssertionError: expected [password should contain atleast eight characters.] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at com.stepDefinations.RegisterStepDef.user_should_get_password_atleast_eight_char_error_message(RegisterStepDef.java:149)
+	at ✽.user should get password atleast eight char error message &quot;password should contain atleast eight characters.&quot;(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/2register.feature:81)
+</pre></div><a href='#' onClick='toggleBox("stack-trace568564610", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace568564610'><pre>java.lang.AssertionError: expected [password should contain atleast eight characters.] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at com.stepDefinations.RegisterStepDef.user_should_get_password_atleast_eight_char_error_message(RegisterStepDef.java:149)
+	at ✽.user should get password atleast eight char error message &quot;password should contain atleast eight characters.&quot;(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/2register.feature:81)
 </pre></div></td>
 <td>4</td>
-<td>com.runner.Runner@7a8c8dcf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to submit code in tryEditor for Squares of a Sorted Array", "Optional[Array]"</td>
-<td><div><pre>java.lang.AssertionError: Result do not match expected [submission success] but found [ No tests were collected]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at com.stepDefinations.ArraysStepDef.the_user_should_be_presented_with_successful_submission_message(ArraysStepDef.java:160)
-	at ✽.The user should be presented with successful submission message(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/5arrays.feature:170)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1821552500", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1821552500'><pre>java.lang.AssertionError: Result do not match expected [submission success] but found [ No tests were collected]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at com.stepDefinations.ArraysStepDef.the_user_should_be_presented_with_successful_submission_message(ArraysStepDef.java:160)
-	at ✽.The user should be presented with successful submission message(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/5arrays.feature:170)
-</pre></div></td>
-<td>1</td>
-<td>com.runner.Runner@7a8c8dcf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to submit code in tryEditor for Search the array link", "Optional[Array]"</td>
-<td><div><pre>java.lang.AssertionError: Result do not match expected [submission success] but found [ Some Tests failed. Please review code]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at com.stepDefinations.ArraysStepDef.the_user_should_be_presented_with_successful_submission_message(ArraysStepDef.java:160)
-	at ✽.The user should be presented with successful submission message(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/5arrays.feature:110)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1117816135", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1117816135'><pre>java.lang.AssertionError: Result do not match expected [submission success] but found [ Some Tests failed. Please review code]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at com.stepDefinations.ArraysStepDef.the_user_should_be_presented_with_successful_submission_message(ArraysStepDef.java:160)
-	at ✽.The user should be presented with successful submission message(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/5arrays.feature:110)
-</pre></div></td>
-<td>1</td>
 <td>com.runner.Runner@7a8c8dcf</td></tr>
 <tr>
 <td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to submit code in tryEditor for Find Numbers with Even Number of Digits", "Optional[Array]"</td>
@@ -201,8 +109,8 @@ Session ID: 4d9cb3415f602aac1af48f638630493f
 	at org.testng.Assert.assertEquals(Assert.java:655)
 	at com.stepDefinations.ArraysStepDef.the_user_should_be_presented_with_successful_submission_message(ArraysStepDef.java:160)
 	at ✽.The user should be presented with successful submission message(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/5arrays.feature:150)
-</pre></div><a href='#' onClick='toggleBox("stack-trace210882265", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace210882265'><pre>java.lang.AssertionError: Result do not match expected [submission success] but found [Error occurred during submission]
+</pre></div><a href='#' onClick='toggleBox("stack-trace2053728875", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2053728875'><pre>java.lang.AssertionError: Result do not match expected [submission success] but found [Error occurred during submission]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
@@ -211,75 +119,99 @@ Session ID: 4d9cb3415f602aac1af48f638630493f
 	at com.stepDefinations.ArraysStepDef.the_user_should_be_presented_with_successful_submission_message(ArraysStepDef.java:160)
 	at ✽.The user should be presented with successful submission message(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/5arrays.feature:150)
 </pre></div></td>
+<td>2</td>
+<td>com.runner.Runner@7a8c8dcf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to submit code in tryEditor for Squares of a Sorted Array", "Optional[Array]"</td>
+<td><div><pre>java.lang.AssertionError: Result do not match expected [submission success] but found [ No tests were collected]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at com.stepDefinations.ArraysStepDef.the_user_should_be_presented_with_successful_submission_message(ArraysStepDef.java:160)
+	at ✽.The user should be presented with successful submission message(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/5arrays.feature:170)
+</pre></div><a href='#' onClick='toggleBox("stack-trace160149022", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace160149022'><pre>java.lang.AssertionError: Result do not match expected [submission success] but found [ No tests were collected]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at com.stepDefinations.ArraysStepDef.the_user_should_be_presented_with_successful_submission_message(ArraysStepDef.java:160)
+	at ✽.The user should be presented with successful submission message(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/5arrays.feature:170)
+</pre></div></td>
 <td>1</td>
 <td>com.runner.Runner@7a8c8dcf</td></tr>
 <tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for code with invalid syntax in tryEditor for Arrays in Python page", "Optional[Array]"</td>
-<td><div><pre>java.lang.AssertionError: Result do not match expected [NameError: name &apos;hello&apos; is not defined on line 1] but found [NameError: name &apos;hellosortedSquares&apos; is not defined on line 9]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at com.stepDefinations.ArraysStepDef.the_user_should_be_presented_with_error_message_as(ArraysStepDef.java:187)
-	at ✽.The user should be presented with error message as &quot;NameError: name &apos;hello&apos; is not defined on line 1&quot;(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/5arrays.feature:180)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2107886571", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2107886571'><pre>java.lang.AssertionError: Result do not match expected [NameError: name &apos;hello&apos; is not defined on line 1] but found [NameError: name &apos;hellosortedSquares&apos; is not defined on line 9]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at com.stepDefinations.ArraysStepDef.the_user_should_be_presented_with_error_message_as(ArraysStepDef.java:187)
-	at ✽.The user should be presented with error message as &quot;NameError: name &apos;hello&apos; is not defined on line 1&quot;(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/5arrays.feature:180)
-</pre></div></td>
-<td>0</td>
-<td>com.runner.Runner@7a8c8dcf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with invalid inputs/  password format all numeric", "Optional[Register]"</td>
-<td><div><pre>java.lang.AssertionError: expected [please enter valid password format] but found [password_mismatch:The two password fields didn’t match.]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at com.stepDefinations.RegisterStepDef.user_should_get_enter_valid_input_error_message(RegisterStepDef.java:163)
-	at ✽.user should get enter valid input error message &quot;please enter valid password format&quot;(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/2register.feature:89)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1899091560", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1899091560'><pre>java.lang.AssertionError: expected [please enter valid password format] but found [password_mismatch:The two password fields didn’t match.]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at com.stepDefinations.RegisterStepDef.user_should_get_enter_valid_input_error_message(RegisterStepDef.java:163)
-	at ✽.user should get enter valid input error message &quot;please enter valid password format&quot;(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/2register.feature:89)
-</pre></div></td>
-<td>4</td>
-<td>com.runner.Runner@7a8c8dcf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with invalid inputs/ password format less than eight characters", "Optional[Register]"</td>
-<td><div><pre>java.lang.AssertionError: expected [password should contain atleast eight characters.] but found [password_mismatch:The two password fields didn’t match.]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at com.stepDefinations.RegisterStepDef.user_should_get_password_atleast_eight_char_error_message(RegisterStepDef.java:149)
-	at ✽.user should get password atleast eight char error message &quot;password should contain atleast eight characters.&quot;(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/2register.feature:81)
-</pre></div><a href='#' onClick='toggleBox("stack-trace931940545", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace931940545'><pre>java.lang.AssertionError: expected [password should contain atleast eight characters.] but found [password_mismatch:The two password fields didn’t match.]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at com.stepDefinations.RegisterStepDef.user_should_get_password_atleast_eight_char_error_message(RegisterStepDef.java:149)
-	at ✽.user should get password atleast eight char error message &quot;password should contain atleast eight characters.&quot;(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/2register.feature:81)
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with invalid inputs/ similar fields", "Optional[Register]"</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c79a3fc4e647a2815fc561c896b56feb, getElementText {id=55c69e00-b653-4407-bf18-ef7a51b50781}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\vanis\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60736}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60736/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (c79a3fc4e647a2815fc561c896b56feb)] -&gt; id: id_username]
+Session ID: c79a3fc4e647a2815fc561c896b56feb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy44.getText(Unknown Source)
+	at com.pageObjects.RegisterPage.validatecompare(RegisterPage.java:143)
+	at com.stepDefinations.RegisterStepDef.user_should_get_password_not_similar_to_username_error_message(RegisterStepDef.java:175)
+	at ✽.user should get password not similar to username error message &quot;password can not be similar as username&quot;(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/2register.feature:98)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1206968440", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1206968440'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c79a3fc4e647a2815fc561c896b56feb, getElementText {id=55c69e00-b653-4407-bf18-ef7a51b50781}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\vanis\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60736}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60736/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (c79a3fc4e647a2815fc561c896b56feb)] -&gt; id: id_username]
+Session ID: c79a3fc4e647a2815fc561c896b56feb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy44.getText(Unknown Source)
+	at com.pageObjects.RegisterPage.validatecompare(RegisterPage.java:143)
+	at com.stepDefinations.RegisterStepDef.user_should_get_password_not_similar_to_username_error_message(RegisterStepDef.java:175)
+	at ✽.user should get password not similar to username error message &quot;password can not be similar as username&quot;(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/2register.feature:98)
 </pre></div></td>
 <td>4</td>
 <td>com.runner.Runner@7a8c8dcf</td></tr>
@@ -293,8 +225,8 @@ Session ID: 4d9cb3415f602aac1af48f638630493f
 	at org.testng.Assert.assertEquals(Assert.java:655)
 	at com.stepDefinations.ArraysStepDef.the_user_should_be_presented_with_successful_submission_message(ArraysStepDef.java:160)
 	at ✽.The user should be presented with successful submission message(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/5arrays.feature:130)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1127510425", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1127510425'><pre>java.lang.AssertionError: Result do not match expected [submission success] but found [ Some Tests failed. Please review code]
+</pre></div><a href='#' onClick='toggleBox("stack-trace578599557", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace578599557'><pre>java.lang.AssertionError: Result do not match expected [submission success] but found [ Some Tests failed. Please review code]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
@@ -303,7 +235,75 @@ Session ID: 4d9cb3415f602aac1af48f638630493f
 	at com.stepDefinations.ArraysStepDef.the_user_should_be_presented_with_successful_submission_message(ArraysStepDef.java:160)
 	at ✽.The user should be presented with successful submission message(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/5arrays.feature:130)
 </pre></div></td>
-<td>2</td>
+<td>1</td>
+<td>com.runner.Runner@7a8c8dcf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with invalid inputs/  password format all numeric", "Optional[Register]"</td>
+<td><div><pre>java.lang.AssertionError: expected [please enter valid password format] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at com.stepDefinations.RegisterStepDef.user_should_get_enter_valid_input_error_message(RegisterStepDef.java:163)
+	at ✽.user should get enter valid input error message &quot;please enter valid password format&quot;(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/2register.feature:89)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1790048347", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1790048347'><pre>java.lang.AssertionError: expected [please enter valid password format] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at com.stepDefinations.RegisterStepDef.user_should_get_enter_valid_input_error_message(RegisterStepDef.java:163)
+	at ✽.user should get enter valid input error message &quot;please enter valid password format&quot;(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/2register.feature:89)
+</pre></div></td>
+<td>4</td>
+<td>com.runner.Runner@7a8c8dcf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for code with invalid syntax in tryEditor for Arrays in Python page", "Optional[Array]"</td>
+<td><div><pre>java.lang.AssertionError: Result do not match expected [NameError: name &apos;hello&apos; is not defined on line 1] but found [NameError: name &apos;hellosortedSquares&apos; is not defined on line 9]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at com.stepDefinations.ArraysStepDef.the_user_should_be_presented_with_error_message_as(ArraysStepDef.java:187)
+	at ✽.The user should be presented with error message as &quot;NameError: name &apos;hello&apos; is not defined on line 1&quot;(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/5arrays.feature:180)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1898767601", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1898767601'><pre>java.lang.AssertionError: Result do not match expected [NameError: name &apos;hello&apos; is not defined on line 1] but found [NameError: name &apos;hellosortedSquares&apos; is not defined on line 9]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at com.stepDefinations.ArraysStepDef.the_user_should_be_presented_with_error_message_as(ArraysStepDef.java:187)
+	at ✽.The user should be presented with error message as &quot;NameError: name &apos;hello&apos; is not defined on line 1&quot;(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/5arrays.feature:180)
+</pre></div></td>
+<td>0</td>
+<td>com.runner.Runner@7a8c8dcf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to submit code in tryEditor for Search the array link", "Optional[Array]"</td>
+<td><div><pre>java.lang.AssertionError: Result do not match expected [submission success] but found [ Some Tests failed. Please review code]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at com.stepDefinations.ArraysStepDef.the_user_should_be_presented_with_successful_submission_message(ArraysStepDef.java:160)
+	at ✽.The user should be presented with successful submission message(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/5arrays.feature:110)
+</pre></div><a href='#' onClick='toggleBox("stack-trace575786030", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace575786030'><pre>java.lang.AssertionError: Result do not match expected [submission success] but found [ Some Tests failed. Please review code]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at com.stepDefinations.ArraysStepDef.the_user_should_be_presented_with_successful_submission_message(ArraysStepDef.java:160)
+	at ✽.The user should be presented with successful submission message(file:///C:/Users/vanis/eclipse-numpyninja/DS-ALGO/src/test/resources/features/5arrays.feature:110)
+</pre></div></td>
+<td>1</td>
 <td>com.runner.Runner@7a8c8dcf</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -315,7 +315,127 @@ Session ID: 4d9cb3415f602aac1af48f638630493f
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "signIn validation with valid inputs", "Optional[Login]"</td>
+<td></td>
+<td>3</td>
+<td>com.runner.Runner@7a8c8dcf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Optional[Data Structure Intro]"</td>
+<td></td>
+<td>8</td>
+<td>com.runner.Runner@7a8c8dcf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Types of Linked List page", "Optional[LinkedList]"</td>
+<td></td>
+<td>1</td>
+<td>com.runner.Runner@7a8c8dcf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in tryEditor for Max Consecutive Ones", "Optional[Array]"</td>
+<td></td>
+<td>0</td>
+<td>com.runner.Runner@7a8c8dcf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "signIn validation with valid inputs", "Optional[Login]"</td>
+<td></td>
+<td>3</td>
+<td>com.runner.Runner@7a8c8dcf</td></tr>
+<tr>
 <td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with invalid inputs/blank fields", "Optional[Register]"</td>
+<td></td>
+<td>3</td>
+<td>com.runner.Runner@7a8c8dcf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for code with invalid syntax in tryEditor for Squares of a Sorted Array", "Optional[Array]"</td>
+<td></td>
+<td>0</td>
+<td>com.runner.Runner@7a8c8dcf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Even Number page", "Optional[Array]"</td>
+<td></td>
+<td>1</td>
+<td>com.runner.Runner@7a8c8dcf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for code with invalid syntax in tryEditor for Search the array link", "Optional[Array]"</td>
+<td></td>
+<td>0</td>
+<td>com.runner.Runner@7a8c8dcf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "signIn validation with inValid inputs", "Optional[Login]"</td>
+<td></td>
+<td>2</td>
+<td>com.runner.Runner@7a8c8dcf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with valid inputs", "Optional[Register]"</td>
+<td></td>
+<td>6</td>
+<td>com.runner.Runner@7a8c8dcf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validation of Start Page", "Optional[Start page]"</td>
+<td></td>
+<td>10</td>
+<td>com.runner.Runner@7a8c8dcf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with invalid inputs/blank fields", "Optional[Register]"</td>
+<td></td>
+<td>3</td>
+<td>com.runner.Runner@7a8c8dcf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with invalid inputs/blank fields", "Optional[Register]"</td>
+<td></td>
+<td>3</td>
+<td>com.runner.Runner@7a8c8dcf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Array Page", "Optional[Array]"</td>
+<td></td>
+<td>2</td>
+<td>com.runner.Runner@7a8c8dcf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Arrays using list page", "Optional[Array]"</td>
+<td></td>
+<td>0</td>
+<td>com.runner.Runner@7a8c8dcf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Max Consecutive Ones page", "Optional[Array]"</td>
+<td></td>
+<td>1</td>
+<td>com.runner.Runner@7a8c8dcf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Traversal page", "Optional[LinkedList]"</td>
+<td></td>
+<td>1</td>
+<td>com.runner.Runner@7a8c8dcf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "signIn validation with inValid inputs", "Optional[Login]"</td>
+<td></td>
+<td>2</td>
+<td>com.runner.Runner@7a8c8dcf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with valid inputs", "Optional[Register]"</td>
+<td></td>
+<td>6</td>
+<td>com.runner.Runner@7a8c8dcf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Deletion page", "Optional[LinkedList]"</td>
+<td></td>
+<td>1</td>
+<td>com.runner.Runner@7a8c8dcf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Max Consecutive Ones page", "Optional[Array]"</td>
+<td></td>
+<td>1</td>
+<td>com.runner.Runner@7a8c8dcf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Implement Linked List in Python page", "Optional[LinkedList]"</td>
+<td></td>
+<td>1</td>
+<td>com.runner.Runner@7a8c8dcf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with invalid inputs/blank fields", "Optional[Register]"</td>
+<td></td>
+<td>3</td>
+<td>com.runner.Runner@7a8c8dcf</td></tr>
+<tr>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with invalid inputs/ password mismatch", "Optional[Register]"</td>
 <td></td>
 <td>3</td>
 <td>com.runner.Runner@7a8c8dcf</td></tr>
@@ -330,49 +450,14 @@ Session ID: 4d9cb3415f602aac1af48f638630493f
 <td>3</td>
 <td>com.runner.Runner@7a8c8dcf</td></tr>
 <tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Applications of Array page", "Optional[Array]"</td>
-<td></td>
-<td>0</td>
-<td>com.runner.Runner@7a8c8dcf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Insertion page", "Optional[LinkedList]"</td>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Sorted Array page", "Optional[Array]"</td>
 <td></td>
 <td>1</td>
 <td>com.runner.Runner@7a8c8dcf</td></tr>
 <tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "signIn validation with valid inputs", "Optional[Login]"</td>
-<td></td>
-<td>3</td>
-<td>com.runner.Runner@7a8c8dcf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Implement Linked List in Python page", "Optional[LinkedList]"</td>
-<td></td>
-<td>1</td>
-<td>com.runner.Runner@7a8c8dcf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with invalid inputs/blank fields", "Optional[Register]"</td>
-<td></td>
-<td>3</td>
-<td>com.runner.Runner@7a8c8dcf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validation of Start Page", "Optional[Start page]"</td>
-<td></td>
-<td>11</td>
-<td>com.runner.Runner@7a8c8dcf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Array Page", "Optional[Array]"</td>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "signIn validation with inValid inputs", "Optional[Login]"</td>
 <td></td>
 <td>2</td>
-<td>com.runner.Runner@7a8c8dcf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Deletion page", "Optional[LinkedList]"</td>
-<td></td>
-<td>1</td>
-<td>com.runner.Runner@7a8c8dcf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with invalid inputs/blank fields", "Optional[Register]"</td>
-<td></td>
-<td>3</td>
 <td>com.runner.Runner@7a8c8dcf</td></tr>
 <tr>
 <td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Search the array page", "Optional[Array]"</td>
@@ -380,69 +465,14 @@ Session ID: 4d9cb3415f602aac1af48f638630493f
 <td>1</td>
 <td>com.runner.Runner@7a8c8dcf</td></tr>
 <tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for invalid code in tryEditor for Max Consecutive Ones", "Optional[Array]"</td>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Applications of Array page", "Optional[Array]"</td>
 <td></td>
 <td>0</td>
 <td>com.runner.Runner@7a8c8dcf</td></tr>
 <tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Arrays using list page", "Optional[Array]"</td>
-<td></td>
-<td>0</td>
-<td>com.runner.Runner@7a8c8dcf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for code with invalid syntax in tryEditor for Squares of a Sorted Array", "Optional[Array]"</td>
-<td></td>
-<td>0</td>
-<td>com.runner.Runner@7a8c8dcf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for code with invalid syntax in tryEditor for Search the array link", "Optional[Array]"</td>
-<td></td>
-<td>0</td>
-<td>com.runner.Runner@7a8c8dcf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "signIn validation with inValid inputs", "Optional[Login]"</td>
-<td></td>
-<td>2</td>
-<td>com.runner.Runner@7a8c8dcf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with invalid inputs/blank fields", "Optional[Register]"</td>
-<td></td>
-<td>4</td>
-<td>com.runner.Runner@7a8c8dcf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with invalid inputs", "Optional[Register]"</td>
-<td></td>
-<td>3</td>
-<td>com.runner.Runner@7a8c8dcf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with invalid inputs/ password mismatch", "Optional[Register]"</td>
-<td></td>
-<td>4</td>
-<td>com.runner.Runner@7a8c8dcf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Sorted Array page", "Optional[Array]"</td>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Creating Linked List page", "Optional[LinkedList]"</td>
 <td></td>
 <td>1</td>
-<td>com.runner.Runner@7a8c8dcf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Even Number page", "Optional[Array]"</td>
-<td></td>
-<td>1</td>
-<td>com.runner.Runner@7a8c8dcf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Even Number page", "Optional[Array]"</td>
-<td></td>
-<td>1</td>
-<td>com.runner.Runner@7a8c8dcf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with valid inputs", "Optional[Register]"</td>
-<td></td>
-<td>7</td>
-<td>com.runner.Runner@7a8c8dcf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with valid inputs", "Optional[Register]"</td>
-<td></td>
-<td>6</td>
 <td>com.runner.Runner@7a8c8dcf</td></tr>
 <tr>
 <td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for code with invalid syntax in tryEditor for Find Numbers with Even Number of Digits", "Optional[Array]"</td>
@@ -450,59 +480,29 @@ Session ID: 4d9cb3415f602aac1af48f638630493f
 <td>0</td>
 <td>com.runner.Runner@7a8c8dcf</td></tr>
 <tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validating Linked List introduction page", "Optional[LinkedList]"</td>
-<td></td>
-<td>2</td>
-<td>com.runner.Runner@7a8c8dcf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Types of Linked List page", "Optional[LinkedList]"</td>
-<td></td>
-<td>1</td>
-<td>com.runner.Runner@7a8c8dcf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "signIn validation with valid inputs", "Optional[Login]"</td>
-<td></td>
-<td>3</td>
-<td>com.runner.Runner@7a8c8dcf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "signIn validation with inValid inputs", "Optional[Login]"</td>
-<td></td>
-<td>2</td>
-<td>com.runner.Runner@7a8c8dcf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Optional[Data Structure Intro]"</td>
-<td></td>
-<td>8</td>
-<td>com.runner.Runner@7a8c8dcf</td></tr>
-<tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Max Consecutive Ones page", "Optional[Array]"</td>
-<td></td>
-<td>1</td>
-<td>com.runner.Runner@7a8c8dcf</td></tr>
-<tr>
 <td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Sorted Array page", "Optional[Array]"</td>
 <td></td>
 <td>1</td>
 <td>com.runner.Runner@7a8c8dcf</td></tr>
 <tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Traversal page", "Optional[LinkedList]"</td>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Insertion page", "Optional[LinkedList]"</td>
 <td></td>
 <td>1</td>
 <td>com.runner.Runner@7a8c8dcf</td></tr>
 <tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "signIn validation with inValid inputs", "Optional[Login]"</td>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register validation with invalid inputs", "Optional[Register]"</td>
 <td></td>
 <td>3</td>
 <td>com.runner.Runner@7a8c8dcf</td></tr>
 <tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Max Consecutive Ones page", "Optional[Array]"</td>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Even Number page", "Optional[Array]"</td>
 <td></td>
-<td>1</td>
+<td>0</td>
 <td>com.runner.Runner@7a8c8dcf</td></tr>
 <tr>
-<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validate Creating Linked List page", "Optional[LinkedList]"</td>
+<td title='com.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validating Linked List introduction page", "Optional[LinkedList]"</td>
 <td></td>
-<td>1</td>
+<td>2</td>
 <td>com.runner.Runner@7a8c8dcf</td></tr>
 </table><p>
 </body>
