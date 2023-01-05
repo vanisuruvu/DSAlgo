@@ -5,6 +5,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import com.utils.Loggerload;
+
 public class ConfigReader {
 	private static Properties properties;
 	private final static String propertyFilePath = "./src/test/resources/config/config.properties";
@@ -29,7 +31,7 @@ public class ConfigReader {
 
 	public static String getBrowserType() {
 		String browser = properties.getProperty("browser");
-//		Loggerload.info("Get property BrowserType");
+		Loggerload.info("Get property BrowserType");
 		if (browser != null)
 			return browser;
 		else

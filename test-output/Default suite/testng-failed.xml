@@ -6,8 +6,8 @@
       <class name="com.runner.Runner">
         <methods>
           <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="33 34 10 11 27 12 29 31"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="10 11 12"/>
         </methods>
       </class> <!-- com.runner.Runner -->
     </classes>

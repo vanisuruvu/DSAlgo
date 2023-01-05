@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.stepDefinations.BaseClass;
+import com.utils.Helper;
 import com.utils.Utils;
 
 public class StartPage extends BaseClass {
@@ -67,13 +68,8 @@ public class StartPage extends BaseClass {
 	 
 	 public void getStartedClick() throws InterruptedException {
 		 Thread.sleep(2000);
-		Utils.webClick(getStartedBtn);
-		    
-	
-	
+		 Utils.webClick(getStartedBtn);
 	 }
-	
-
 }
 
 

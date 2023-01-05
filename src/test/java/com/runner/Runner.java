@@ -7,6 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 ,glue ={"com.stepDefinations","com.utils.Helper", "appHooks"}
 ,monochrome=true,dryRun = false,   // tags="@arrays",
 //tags = "@arrays",
+
 plugin= {"pretty","html:target/cucumber.html"
 		,"html:target/HtmlReports.html","io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
 })

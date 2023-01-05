@@ -6,6 +6,7 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.utils.Helper;
 import com.utils.Utils;
 
 public class LoginPage {
@@ -49,18 +50,16 @@ public class LoginPage {
 	 
 	
 	 public void signInClick() throws Exception {
-		 Thread.sleep(2000);
 		 Utils.webClick(signInLink);
 		    }
 	 
 	 public String validateSignInPage() throws InterruptedException {
-		 Thread.sleep(2000);
 		 String text = logInBtn.getAttribute("value");
 			return text;
 		    }
 	 
 	 public void registrationLinkClick() throws Exception {
-		 
+		 PageFactory.initElements(Helper.getDriver(), this);
 		 Utils.webClick(registerLink);
 		    }
 	 
@@ -70,26 +69,21 @@ public class LoginPage {
 		    }
 	 
 	 public void enterUserName(String value) throws InterruptedException {
-		 Thread.sleep(1000);
 		 Utils.webSendKeys(usernameTxtBox, value);
 		
 		}
 	 public void enterPassword(String value) throws InterruptedException {
-		 Thread.sleep(1000);
 		 Utils.webSendKeys(passowrdTxtBox, value);
 		
 		}
 	 
 	 public void clickLogInBtn() throws InterruptedException {
-		 Thread.sleep(2000);
 		 Utils.webClick(logInBtn);
 		 
 	 }
 	 
 	 public void clickSignOutLink() throws InterruptedException {
-		 Thread.sleep(2000);
 		 Utils.webClick(logoutLink);
-		 Thread.sleep(2000);
 	 }
 	 public String validateSuccessLoginMsg() {
 		 String text = successfulLoginMsg.getText();
@@ -101,14 +95,12 @@ public class LoginPage {
 		    }
 	 
 		public String validationEmptyFieldUserName() throws InterruptedException {
-			Thread.sleep(3000);
 			String message = usernameTxtBox.getAttribute("validationMessage");
 			System.out.println(message);
 			return message;
 		}
 		
 		public String validationEmptyFieldPassword() throws InterruptedException {
-			Thread.sleep(3000);
 			String message = passowrdTxtBox.getAttribute("validationMessage");
 			System.out.println(message);
 			return message;
@@ -117,11 +109,4 @@ public class LoginPage {
 			 String text = invalidCredMsg.getText();
 				return text;
 			    }
-		
-
-	 
-	 
-	
-	
-
 }

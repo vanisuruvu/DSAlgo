@@ -24,7 +24,7 @@ import com.utils.Helper;
 
 import com.utils.ConfigReader;
 import com.utils.ExcelReader;
-//import com.utils.Loggerload;
+import com.utils.Loggerload;
 
 import com.stepDefinations.BaseClass;
 
@@ -143,7 +143,7 @@ public class Utils {
 		ExcelReader reader = new ExcelReader();
 		List<Map<String, String>> testdata = reader.getData(Excelpath, sheetname);
 		String result = testdata.get(rownumber).get("Result");
-//		Loggerload.info("Expected result from Excel sheetname " + sheetname + " and " + rownumber + " : " + result);
+		Loggerload.info("Expected result from Excel sheetname " + sheetname + " and " + rownumber + " : " + result);
 		return result;
 	}
 	
@@ -183,6 +183,11 @@ public class Utils {
 			e.printStackTrace();
 		}
 		return false;
+	}
+
+
+	public static void waitForElement(WebElement element) {
+		new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOf(element));		
 	}
 }
 

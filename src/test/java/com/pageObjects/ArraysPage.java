@@ -1,6 +1,6 @@
 package com.pageObjects;
 
-	import java.io.IOException;
+import java.io.IOException;
 import java.time.Duration;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
@@ -14,6 +14,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.utils.Helper;
 import com.utils.Utils;
 import io.cucumber.java.BeforeAll;
+import com.utils.ConfigReader;
+
+import com.utils.Loggerload;
 
 public class ArraysPage {
 	
@@ -49,6 +52,9 @@ public class ArraysPage {
 	@FindBy(xpath ="//button[text()='Run']")
 	WebElement runBtn;
 	
+	@FindBy(xpath="//*[@class='button']")
+	WebElement submitButton;
+	
 	@FindBy(xpath ="//a[text()='Practice Questions']")
 	WebElement praticeQuestionsLink;
 	
@@ -63,6 +69,9 @@ public class ArraysPage {
 	
 	@FindBy(xpath ="//a[text()='Squares of  a Sorted Array']")
 	WebElement sortedArrayLink;
+	
+	@FindBy(id="output")
+	WebElement output;
 	
 	public void clickGetStartedBtn() throws InterruptedException {
 		Thread.sleep(1000);
@@ -110,11 +119,40 @@ public class ArraysPage {
 		Utils.enterPythonCode(textEditor, pythonCode);
 	}
 	
+	public void enterPythonCode(String sheetName, int rowNumber) throws InvalidFormatException, IOException {
+		String code = Utils.getCodefromExcel(sheetName, rowNumber);
+		Utils.enterPythonCode(textEditor, code);
+	}
+	
+	public void clickOnSubmitButton() {
+		Loggerload.info("Click on Submit button");
+		submitButton.click();
+	}
 	public void enterCodePractice(String sheetName, int rowNumber) throws InvalidFormatException, IOException {
 		String code = Utils.getCodefromExcel(sheetName, rowNumber);
 		Utils.enterCodePractice(textEditor, answerForm, code);
 	}
+	public String getActualResult() {
+		Utils.waitForElement(output);
+		return output.getText();
+	}
 	
+	public String getExpectedResult(String sheetName, Integer rowNum) throws InvalidFormatException, IOException {
+		String expectedResult = Utils.getResultfromExcel(sheetName, rowNum);
+		return expectedResult;
+	}
+	
+	public void navigateTo(String pagename) {
+		String urlName = ConfigReader.geturl(pagename);
+		driver.get(urlName);
+	}
+	
+	public String getErrorText() {
+		String errorMsg = driver.switchTo().alert().getText();
+		driver.switchTo().alert().accept();
+		return errorMsg;
+
+	}
 }
 
 

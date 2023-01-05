@@ -10,8 +10,6 @@ Feature: Login
   Scenario Outline: signIn validation with valid inputs
     When user clicks on Register link on signIn page
     Then user should be successfully redirected to register page
-    When user clicks on Register link on signIn page
-    Then user should be successfully redirected to register page
     When user clicks on signin link
     When user enters valid "<username>" "<password>"
     And user will click on login button
