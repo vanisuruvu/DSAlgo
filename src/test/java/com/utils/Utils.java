@@ -120,11 +120,13 @@ public class Utils {
 	}
 
 	public static boolean enterPythonCode(WebElement element, String code) {
+		Loggerload.info("Before sending keys to " + element.getText() );
 		new Actions(driver).sendKeys(element, code).perform();
 		return true;
 	}
 	
 	public static void enterCodePractice(WebElement element, WebElement answerForm, String code) {
+		Loggerload.info("Clearing text before entering code in "+element.getText()+" enterCodePractice");
 		new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOf(answerForm));
 		new Actions(driver).keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).sendKeys(Keys.DELETE).perform();
 		String[] str1 = code.split("\n");

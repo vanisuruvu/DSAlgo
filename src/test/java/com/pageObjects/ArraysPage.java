@@ -31,6 +31,15 @@ public class ArraysPage {
 	@FindBy(xpath ="//a[text()='Arrays in Python']")
 	WebElement arraysInPythonLink;
 	
+	@FindBy(xpath="//a[text()='Arrays Using List']")
+	WebElement arraysUsingListLink;
+	
+	@FindBy(xpath = "//a[text()='Basic Operations in Lists']")
+	WebElement basicOperationsInListsLink;
+
+	@FindBy(xpath ="//a[text()='Applications of Array']")
+	WebElement applicationsofArrayLink;
+	
 	@FindBy(partialLinkText = "Try here")
 	WebElement tryHereBtn;
 	
@@ -39,15 +48,6 @@ public class ArraysPage {
 	
 	@FindBy (xpath ="//*[@id='answer_form']")
 	WebElement answerForm;
-	
-	@FindBy(xpath="//a[text()='Arrays Using List']")
-	WebElement arraysUsingListLink;
-	
-	@FindBy(xpath = "//a[text()='Basic Operations in Lists']")
-	WebElement basicOperationsInListsLink;
-			
-	@FindBy(xpath ="//a[text()='Applications of Array']")
-	WebElement applicationsofArrayLink;
 		
 	@FindBy(xpath ="//button[text()='Run']")
 	WebElement runBtn;
@@ -75,47 +75,60 @@ public class ArraysPage {
 	
 	public void clickGetStartedBtn() throws InterruptedException {
 		Thread.sleep(1000);
+		Loggerload.info("Before click " + getStartedArrayBt.getText() + " link ");
 		Utils.webClick(getStartedArrayBt);
 	}
 	public void clickArraysInPythonLink() {
+		Loggerload.info("Before click " + arraysInPythonLink.getText() + " link");
 		Utils.webClick(arraysInPythonLink);
 	}
 	public void clickTryHereBtn() {
+		Loggerload.info("Before click " + tryHereBtn.getText() + " button");
 		Utils.webClick(tryHereBtn);
 	}
 	
 	public void clickOnArrayUsingListLink() {
+		Loggerload.info("Before click " + arraysUsingListLink.getText() + " link");
 		Utils.webClick(arraysUsingListLink);
 	}
 	
 	public void clickOnBasicOperationsInListsLink() {
+		Loggerload.info("Before click " + basicOperationsInListsLink.getText() + " link");
 		Utils.webClick(basicOperationsInListsLink);
 	}
 	
 	public void clickOnApplicationsOfArrayLink() {
+		Loggerload.info("Before click " + applicationsofArrayLink.getText() + "  link");
 		Utils.webClick(applicationsofArrayLink);
 	}
 	public void clickOnArrayRunbtn() {
+		Loggerload.info("Before click " + runBtn.getText() + "  button");
 		Utils.webClick(runBtn);
 	}
 	
 	public void clickOnPraticeQuestionsLink() {
+		Loggerload.info("Before click " + praticeQuestionsLink.getText() + "  link");
 		Utils.webClick(praticeQuestionsLink);
 	}
 	public void clickOnSearchTheArrayLink() {
+		Loggerload.info("Before click " + searchtheArrayLink.getText() + " link");
 		Utils.webClick(searchtheArrayLink);
 	}
 	public void clickOnMaxConsecutiveLink() {
+		Loggerload.info("Before click " + maxConsecutiveLink.getText() + " link");
 		Utils.webClick(maxConsecutiveLink);
 	}
 	public void clickOnFindEvenLink() {
+		Loggerload.info("Before click " + findEvenLink.getText() + " link");
 		Utils.webClick(findEvenLink);
 	}
 	public void clickOnSortedArrayLink() {
+		Loggerload.info("Before click " + sortedArrayLink.getText() + " link");
 		Utils.webClick(sortedArrayLink);
 	}
 		
 	public void enterPythonCode(String pythonCode) {
+		Loggerload.info("Before entering text in " + textEditor.getText() + " input field");
 		Utils.enterPythonCode(textEditor, pythonCode);
 	}
 	
@@ -154,6 +167,3 @@ public class ArraysPage {
 
 	}
 }
-
-
-

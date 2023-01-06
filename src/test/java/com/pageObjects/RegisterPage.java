@@ -7,6 +7,7 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import com.utils.Helper;
+import com.utils.Loggerload;
 import com.utils.Utils;
 
 import junit.framework.Assert;
@@ -61,46 +62,55 @@ public class RegisterPage {
 	
 	public void clickRegisterLink() throws Exception {
 		PageFactory.initElements(driver, this);
+		Loggerload.info("click on RegisterPage "+registerLink.getText()+" link");
 		Utils.webClick(registerLink);
 	}
 	
 	public void sendUsernameText(String username) throws InterruptedException {
 		PageFactory.initElements(driver, this);
+		Loggerload.info("sending keys on RegisterPage "+usernameText.getText()+" text field");
 		Utils.webSendKeys(usernameText, Utils.getRandomNum()+username);
 	}
 	
 	public void sendPasswordText1(String password1) throws InterruptedException {
+		Loggerload.info("sending keys on RegisterPage "+passwordText1.getText()+" text field");
 		Utils.webSendKeys(passwordText1, password1);
 	}
 	
 	public void sendPasswordText2(String password2) throws Exception {
+		Loggerload.info("sending keys on RegisterPage "+passwordText2.getText()+" text field");
 		Utils.webSendKeys(passwordText2, password2);
 	}
 	
 	public void clickRegisterButton() throws Exception {
+		Loggerload.info("click on RegisterPage "+registerButton.getText()+" button");
 		Utils.webClick(registerButton);
 		Thread.sleep(1000);
 	}
 	
 	public String getNewAccountCreatedLabelText() {
+		Loggerload.info("validating on RegisterPage "+newAccountCreatedLabel.getText()+" label text");
 		return newAccountCreatedLabel.getText();
 	}
 	
 	public void clickSignOutLink() throws Exception {
+		Loggerload.info("click on RegisterPage "+signOutLink.getText()+" link");
 		Utils.webClick(signOutLink);
 		Thread.sleep(2000);
 	}
 	
 	public String validationEmptyFields() throws InterruptedException {
+		Loggerload.info("validating on RegisterPage "+usernameText.getText()+" text field");
 		String mesg=usernameText.getAttribute("validationMessage");
 		return mesg;
 	}
 	public String validationEmptyFieldspassword1() throws InterruptedException {
+		Loggerload.info("validating on RegisterPage "+passwordText1.getText()+" text field");
 		String mesg=passwordText1.getAttribute("validationMessage");
 		return mesg;
 	}
 	public String validationEmptyFieldspassword2() throws InterruptedException {
-		//Thread.sleep(3000);
+		Loggerload.info("validating on RegisterPage "+passwordText2.getText()+" text field");
 		String mesg=passwordText2.getAttribute("validationMessage");
 		return mesg;
 	}
@@ -163,12 +173,4 @@ public class RegisterPage {
 	    return passwordMismatch.getText();
 	}
 
-	private static boolean isNumeric(String str) {
-		// returns true if str is numeric
-		boolean isNumbers = false;
-		for(int i = 0; i< str.length(); i++) {
-		}
-		return isNumbers;
-	}
 }
-	

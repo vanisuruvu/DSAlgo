@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.utils.Helper;
+import com.utils.Loggerload;
 import com.utils.Utils;
 
 public class LoginPage {
@@ -14,8 +15,6 @@ public class LoginPage {
 	public LoginPage(WebDriver webDriver) {
 		PageFactory.initElements(webDriver, this);
 	}
-	
-
 	
 	@FindBy(xpath ="//a[text()='Sign in']")
 	WebElement signInLink;
@@ -50,63 +49,71 @@ public class LoginPage {
 	 
 	
 	 public void signInClick() throws Exception {
+		 Loggerload.info("click on LoginPage "+signInLink.getText()+" link");
 		 Utils.webClick(signInLink);
-		    }
+	 }
 	 
 	 public String validateSignInPage() throws InterruptedException {
+		 Loggerload.info("click on LoginPage "+logInBtn.getText()+" button");
 		 String text = logInBtn.getAttribute("value");
-			return text;
-		    }
+		 return text;
+	 }
 	 
 	 public void registrationLinkClick() throws Exception {
 		 PageFactory.initElements(Helper.getDriver(), this);
+		 Loggerload.info("click on LoginPage "+registerLink.getText()+" link");
 		 Utils.webClick(registerLink);
-		    }
+    }
 	 
-	 public String validateRegBtn() {
-		 String text = validateRegisterBtn.getAttribute("value");
-			return text;
-		    }
+	public String validateRegBtn() {
+		String text = validateRegisterBtn.getAttribute("value");
+		return text;
+    }
 	 
-	 public void enterUserName(String value) throws InterruptedException {
+	public void enterUserName(String value) throws InterruptedException {
+		 Loggerload.info("sending keys on LoginPage "+usernameTxtBox.getText()+" input field");
 		 Utils.webSendKeys(usernameTxtBox, value);
-		
-		}
-	 public void enterPassword(String value) throws InterruptedException {
+	}
+
+	public void enterPassword(String value) throws InterruptedException {
+		 Loggerload.info("sending keys on LoginPage "+logInBtn.getText()+" input field");
 		 Utils.webSendKeys(passowrdTxtBox, value);
-		
-		}
+	}
 	 
 	 public void clickLogInBtn() throws InterruptedException {
+		 Loggerload.info("click on LoginPage "+logInBtn.getText()+" button");
 		 Utils.webClick(logInBtn);
-		 
 	 }
 	 
 	 public void clickSignOutLink() throws InterruptedException {
+		 Loggerload.info("click on LoginPage "+logoutLink.getText()+" button");
 		 Utils.webClick(logoutLink);
 	 }
 	 public String validateSuccessLoginMsg() {
-		 String text = successfulLoginMsg.getText();
-			return text;
-		    }
+		String text = successfulLoginMsg.getText();
+		return text;
+	}
 	 public String validateSuccessLogOutMsg() {
-		 String text = successfulLogOutMsg.getText();
-			return text;
-		    }
+		String text = successfulLogOutMsg.getText();
+		return text;
+    }
 	 
-		public String validationEmptyFieldUserName() throws InterruptedException {
-			String message = usernameTxtBox.getAttribute("validationMessage");
-			System.out.println(message);
-			return message;
-		}
-		
-		public String validationEmptyFieldPassword() throws InterruptedException {
-			String message = passowrdTxtBox.getAttribute("validationMessage");
-			System.out.println(message);
-			return message;
-		}
-		public String validateInvalidCredMsg() {
-			 String text = invalidCredMsg.getText();
-				return text;
-			    }
+	public String validationEmptyFieldUserName() throws InterruptedException {
+		String message = usernameTxtBox.getAttribute("validationMessage");
+		System.out.println(message);
+		Loggerload.info("Validating message on LoginPage "+usernameTxtBox.getText()+" textbox");
+		return message;
+	}
+	
+	public String validationEmptyFieldPassword() throws InterruptedException {
+		String message = passowrdTxtBox.getAttribute("validationMessage");
+		System.out.println(message);
+		Loggerload.info("Validating message on LoginPage "+passowrdTxtBox.getText()+" textbox");
+		return message;
+	}
+	public String validateInvalidCredMsg() {
+		Loggerload.info("Validating message on LoginPage "+invalidCredMsg.getText());
+		String text = invalidCredMsg.getText();
+		return text;
+	}
 }

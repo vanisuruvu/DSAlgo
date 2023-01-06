@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.mongodb.util.Util;
 import com.stepDefinations.BaseClass;
+import com.utils.Loggerload;
 import com.utils.Utils;
 
 public class LinkedListPage extends BaseClass
@@ -54,15 +55,17 @@ public class LinkedListPage extends BaseClass
 		
 
 		public void clickGetStarted() {
+			Loggerload.info("Click on LinkedList "+ getStartedBtn.getText()+ " button");
 			Utils.webClick(getStartedBtn);
 		}
 		
 		public void clickRunBtn() {
+			Loggerload.info("Click on LinkedList "+ runBtn.getText()+ " button");
 			Utils.webClick(runBtn);
 		}
 		
-		
 		public void clickIntroductionLink() {
+			Loggerload.info("Click on LinkedList "+ introductionLink.getText()+ " link");
 			Utils.webClick(introductionLink);
 		}
 
@@ -71,10 +74,12 @@ public class LinkedListPage extends BaseClass
 		}*/
 		
 		public void enterCode(String pythonCode) throws InterruptedException {
+			Loggerload.info("sending text on "+ textEditor.getText()+ " input field");
 			Utils.enterPythonCode(textEditor, pythonCode);
 		} 
 
 		public void clickCreatingLinkedListLink() {
+			Loggerload.info("Click on LinkedList "+ creatingLinkListLink.getText()+ " link");
 			Utils.webClick(creatingLinkListLink);
 		}
 		
@@ -84,6 +89,7 @@ public class LinkedListPage extends BaseClass
 		
 		
 		public void clickTypesOfLinkedListLink() {
+			Loggerload.info("Click on LinkedList "+ typesOfLinkedListLink.getText()+ " link");
 			Utils.webClick(typesOfLinkedListLink);
 		}
 		
@@ -94,6 +100,7 @@ public class LinkedListPage extends BaseClass
 //		}
 		
 		public void clickImplementLLInPythonLink() {
+			Loggerload.info("Click on LinkedList "+ implementLLInPython.getText()+ " link");
 			Utils.webClick(implementLLInPython);
 		}
 		
@@ -102,6 +109,7 @@ public class LinkedListPage extends BaseClass
 //		}
 		
 		public void clickTraversalLink() {
+			Loggerload.info("Click on LinkedList "+ traversalLL.getText()+ " link");
 			Utils.webClick(traversalLL);
 		}
 		
@@ -110,6 +118,7 @@ public class LinkedListPage extends BaseClass
 //		}
 		
 		public void clickInsertionLink() {
+			Loggerload.info("Click on LinkedList "+ insertionLL.getText()+ " link");
 			Utils.webClick(insertionLL);
 		}
 		
@@ -118,20 +127,17 @@ public class LinkedListPage extends BaseClass
 //		}
 		
 		public void clickDeletionLink() {
+			Loggerload.info("Click on LinkedList "+ deletionLL.getText()+ " link");
 			Utils.webClick(deletionLL);
 		}
 		
 //		public void enterCodeDeletionLL() {
 //			textEditor.sendKeys("print\" Deletion Linked List  \"");
 //		}
-	//	
 			
-
 		/*
 		public void enterCode(String pythonCode) {
 				//textEditor.sendKeys("print\" hello its done\"");
 			Utils.webSendKeys(textEditor, pythonCode);
 		}*/
-
-
 	}
