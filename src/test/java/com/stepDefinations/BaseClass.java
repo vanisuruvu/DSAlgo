@@ -1,7 +1,5 @@
 package com.stepDefinations;
 
-import org.openqa.selenium.WebDriver;
-
 import com.pageObjects.ArraysPage;
 import com.pageObjects.DS_IntroPage;
 import com.pageObjects.LinkedListPage;

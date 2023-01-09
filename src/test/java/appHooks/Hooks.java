@@ -1,11 +1,11 @@
 package appHooks;
 
 import java.io.ByteArrayInputStream;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
-//import driverFactory.DriverFactory;
 import io.cucumber.java.AfterAll;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
@@ -18,7 +18,6 @@ import com.utils.Loggerload;
 
 public class Hooks {
 	private static WebDriver driver;
-//	private static DriverFactory driverfactory;
 	static Scenario scenario;
 
 	@BeforeAll
@@ -28,20 +27,19 @@ public class Hooks {
 		ConfigReader.loadConfig();
 		String browser = ConfigReader.getBrowserType();
 		
-		//Initialize driver from driver factory
-//		driverfactory = new DriverFactory();
-//		driver = driverfactory.initializeDrivers(browser);
+		//Initialize driver
 		driver = Helper.getDriver();
 		Loggerload.info("Initializing driver for : "+browser);
 	
 	}
+	
 
 	@Before
 	public void scenario(Scenario scenario) {
 		Loggerload.info("===============================================================================================");
 		Loggerload.info(scenario.getSourceTagNames() +" : "+scenario.getName());
 		Loggerload.info("-----------------------------------------------------------------------------------------------");
-		
+		Helper.setUpDriver();
 	}
 	@AfterStep
 	public void afterstep(Scenario scenario) {
@@ -59,6 +57,6 @@ public class Hooks {
 	@AfterAll
 	public static void after() {
 		Loggerload.info("Closing Driver");
-//		driverfactory.closeallDriver();
+		Helper.tearDown();
 	}
 }

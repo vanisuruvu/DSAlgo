@@ -1,11 +1,5 @@
 package com.stepDefinations;
 
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-import io.qameta.allure.Allure;
-import com.utils.Loggerload;
-
 import static org.testng.Assert.assertEquals;
 
 import java.io.ByteArrayInputStream;
@@ -20,6 +14,12 @@ import org.testng.Assert;
 
 import com.pageObjects.ArraysPage;
 import com.utils.Helper;
+import com.utils.Loggerload;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import io.qameta.allure.Allure;
 
 
 public class ArraysStepDef extends BaseClass{

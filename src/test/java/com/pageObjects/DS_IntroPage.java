@@ -6,9 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.utils.Utils;
-
 import com.utils.Loggerload;
+import com.utils.Utils;
 
 public class DS_IntroPage {
 	public DS_IntroPage(WebDriver webDriver) {

@@ -1,22 +1,17 @@
 package com.pageObjects;
 
 import java.io.IOException;
-import java.time.Duration;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import com.utils.Helper;
-import com.utils.Utils;
-import io.cucumber.java.BeforeAll;
-import com.utils.ConfigReader;
 
+import com.utils.ConfigReader;
+import com.utils.Helper;
 import com.utils.Loggerload;
+import com.utils.Utils;
 
 public class ArraysPage {
 	

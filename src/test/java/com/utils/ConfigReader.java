@@ -5,8 +5,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-import com.utils.Loggerload;
-
 public class ConfigReader {
 	private static Properties properties;
 	private final static String propertyFilePath = "./src/test/resources/config/config.properties";

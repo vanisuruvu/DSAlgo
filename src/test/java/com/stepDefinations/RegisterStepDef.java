@@ -1,15 +1,11 @@
 package com.stepDefinations;
 
-import java.util.List;
-import java.util.Map;
-
 import org.testng.Assert;
 
 import com.pageObjects.RegisterPage;
 import com.pageObjects.StartPage;
 import com.utils.Helper;
 
-import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
