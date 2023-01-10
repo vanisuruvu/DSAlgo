@@ -1,5 +1,7 @@
 package com.stepDefinations;
 
+import static org.testng.Assert.assertEquals;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
@@ -8,6 +10,7 @@ import com.pageObjects.DS_IntroPage;
 import com.pageObjects.LinkedListPage;
 import com.pageObjects.StackPage;
 import com.utils.Helper;
+import com.utils.Loggerload;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -44,11 +47,19 @@ public class CommonStepDefs extends BaseClass {
 	@Then("It should navigate to corresponding page with title {string}")
 	public void it_should_navigate_to_corresponding_page_with_title(String title) {
 		listPage = new LinkedListPage(driver);	
-		//stackPage = new StackPage(driver);
+//		stackPage = new StackPage(driver);
 		arrayPage = new ArraysPage(driver);
 		ds_IntroPage = new DS_IntroPage(driver);
 		
 		Assert.assertEquals(Helper.getTitle(), title);
+	}
 
-}
+	@Then("The user gets an error message")
+	public void the_user_gets_an_error_message() {
+		Loggerload.info("Invalid code is taken from excel and clicked on run button");
+		arrayPage = new ArraysPage(driver);
+		String actualMsg = arrayPage.getErrorText();
+		Loggerload.info("Error message for invalid python code is -" + actualMsg);
+		assertEquals(actualMsg,"NameError: name 'hello' is not defined on line 1", "Result do not match");
+	}
 }

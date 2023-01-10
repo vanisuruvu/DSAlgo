@@ -28,7 +28,7 @@ Feature: Array
     When User click on Arrays using list
     And It should navigate to corresponding array page with title "Arrays Using List"
    When user clicks on Try here
-    Then It should navigate to corresponding  page with title "Assessment"
+    Then It should navigate to corresponding page with title "Assessment"
     When user enter the Python code
       | print("Arrays using list") |
    And click on run button
