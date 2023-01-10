@@ -9,12 +9,12 @@ Background:
     
 @ds  
 Scenario:
- 		Given The user is on home page as title "NumpyNinja"
+ 		Given The user is at home page with title "NumpyNinja"
     When user click on Get started button in Data Structure
     Then user will successfully navigate to corresponding page with title "Data Structures-Introduction"
     When user click on Time Complexity
     Then It should navigate to corresponding page with title "Time Complexity"
-    When user click on Try here
+    When user clicks on Try here
     Then It should navigate to corresponding page with title "Assessment"
     When user enter the python code 
       | print("Data Structures Introduction")|
