@@ -27,13 +27,14 @@ public class ArraysStepDef extends BaseClass{
 	WebDriver driver = Helper.getDriver();
 	static String expectedMsg;
 	
-	@Given("The user is in home page with title {string}")
-	public void the_user_is_in_home_page_with_title(String string) {
-		arrayPage= new ArraysPage(Helper.getDriver());
-	}
+//	@Given("The user is in home page with title {string}")
+//	public void the_user_is_in_home_page_with_title(String string) {
+//		arrayPage= new ArraysPage(Helper.getDriver());
+//	}
 	
 	@Then("click on Get started button in array")
 	public void click_on_get_started_button_in_array() throws InterruptedException {
+		arrayPage= new ArraysPage(Helper.getDriver());
 		arrayPage.clickGetStartedBtn();
 	}
 	
@@ -42,10 +43,10 @@ public class ArraysStepDef extends BaseClass{
 		Assert.assertEquals(Helper.getTitle(), title);
 	}
 	
-	@Then("user click on array Try here")
-	public void user_click_on_array_try_here() {
-	    arrayPage.clickTryHereBtn();
-	}
+//	@Then("user click on array Try here")
+//	public void user_click_on_array_try_here() {
+//	    arrayPage.clickTryHereBtn();
+//	}
 	
 	@When("user click on Arrays in Phython")
 	public void user_click_on_arrays_in_phython() {
@@ -60,10 +61,10 @@ public class ArraysStepDef extends BaseClass{
 		arrayPage.enterPythonCode(data.get(0).get(0));
 	}
 	
-	@When("click on array run button")
-	public void click_on_array_run_button() {
-	    arrayPage.clickOnArrayRunbtn();
-	}
+//	@When("click on array run button")
+//	public void click_on_array_run_button() {
+//	    arrayPage.clickOnArrayRunbtn();
+//	}
 	
 	@Then("The result should be displayed below the run button")
 	public void the_result_should_be_displayed_below_the_run_button() {
@@ -172,6 +173,7 @@ public class ArraysStepDef extends BaseClass{
 		Loggerload.info("The user enter valid python code in tryEditor from sheetname :" + sheetName
 				+ " and row number : " + rowNum);
 		arrayPage = new ArraysPage(driver);
+		arrayPage.clearEditorCode();
 		arrayPage.enterPythonCode(sheetName, rowNum);
 		expectedMsg = arrayPage.getExpectedResult(sheetName, rowNum);
 	}
@@ -189,6 +191,8 @@ public class ArraysStepDef extends BaseClass{
 	
 	@Given("The user is in a page having an tryEditor with a Run button to test")
 	public void the_user_is_in_a_page_having_an_try_editor_with_a_run_button_to_test() {
+		arrayPage = new ArraysPage(driver);
+		arrayPage.navigateTo("tryeditorurl");
 		Loggerload.info("User redirected to a page having an tryEditor with a Run button to test");
 		String Title = Helper.getTitle();
 		Loggerload.info("Title of current page is : " + Title);
@@ -209,4 +213,5 @@ public class ArraysStepDef extends BaseClass{
 		arrayPage.enterCodePractice(sheetName, rowNum);
 		expectedMsg = arrayPage.getExpectedResult(sheetName, rowNum);
 	}
+
 }

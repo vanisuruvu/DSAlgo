@@ -84,10 +84,10 @@ WebDriver driver = Helper.getDriver();
 		   ds_IntroPage.enterCode(data.get(0).get(0)); 
 	}	
 	
-	@When("click on run button")
-	public void click_on_run_button() throws InterruptedException {
-		ds_IntroPage.clickRunBtn();
-	}
+//	@When("click on run button")
+//	public void click_on_run_button() throws InterruptedException {
+//		ds_IntroPage.clickRunBtn();
+//	}
 	
 	@Then("user is navigated to home page {string}")
 	public void user_is_navigated_to_home_page(String url) {
