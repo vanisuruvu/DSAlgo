@@ -159,6 +159,10 @@ public class ArraysPage {
 		String errorMsg = driver.switchTo().alert().getText();
 		driver.switchTo().alert().accept();
 		return errorMsg;
-
 	}
+	
+	public void clearEditorCode() {
+		Utils.clearCodeFirst(textEditor);
+	}
+	
 }

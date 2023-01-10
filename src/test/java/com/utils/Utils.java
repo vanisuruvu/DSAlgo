@@ -106,6 +106,11 @@ public class Utils {
 		}
 		return false;
 	}
+	
+	public static void clearCodeFirst(WebElement element) {
+		Loggerload.info("Clearing text in editor");
+		new Actions(driver).keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).sendKeys(Keys.DELETE).perform();
+	} 
 
 	public static boolean enterPythonCode(WebElement element, String code) {
 		Loggerload.info("Before sending keys to " + element.getText() );

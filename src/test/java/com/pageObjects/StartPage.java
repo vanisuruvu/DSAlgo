@@ -41,7 +41,6 @@ public class StartPage extends BaseClass {
 	WebElement getStartedDSBtn;
 	
 	public void clickGetStartedBtn() throws Exception {
-		 Thread.sleep(2000);
 		 Loggerload.info("click on getStartedPage "+getStartedBtn.getText()+" button");
 		 Utils.webClick(getStartedBtn);
     }
