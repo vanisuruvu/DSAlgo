@@ -8,7 +8,7 @@ import org.testng.Assert;
 import com.pageObjects.ArraysPage;
 import com.pageObjects.DS_IntroPage;
 import com.pageObjects.LinkedListPage;
-import com.pageObjects.StackPage;
+//import com.pageObjects.StackPage;
 import com.utils.Helper;
 import com.utils.Loggerload;
 
@@ -32,7 +32,7 @@ public class CommonStepDefs extends BaseClass {
 	@Given("The user is at home page with title {string}")
 	public void the_user_is_at_home_page_with_title(String title) {
 		listPage = new LinkedListPage(driver);	
-		stackPage = new StackPage(driver);
+//		stackPage = new StackPage(driver);
 		System.out.println("title of page :"+driver.getTitle());
 		Assert.assertEquals(title, driver.getTitle());
 		
