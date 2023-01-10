@@ -27,11 +27,6 @@ public class ArraysStepDef extends BaseClass{
 	WebDriver driver = Helper.getDriver();
 	static String expectedMsg;
 	
-//	@Given("The user is in home page with title {string}")
-//	public void the_user_is_in_home_page_with_title(String string) {
-//		arrayPage= new ArraysPage(Helper.getDriver());
-//	}
-	
 	@Then("click on Get started button in array")
 	public void click_on_get_started_button_in_array() throws InterruptedException {
 		arrayPage= new ArraysPage(Helper.getDriver());
@@ -43,16 +38,10 @@ public class ArraysStepDef extends BaseClass{
 		Assert.assertEquals(Helper.getTitle(), title);
 	}
 	
-//	@Then("user click on array Try here")
-//	public void user_click_on_array_try_here() {
-//	    arrayPage.clickTryHereBtn();
-//	}
-	
 	@When("user click on Arrays in Phython")
 	public void user_click_on_arrays_in_phython() {
 		arrayPage.clickArraysInPythonLink();
 	}
-	
 	
 	@When("user enter the Python code")
 	public void user_enter_the_python_code(io.cucumber.datatable.DataTable pythonCode) throws InterruptedException {
@@ -60,12 +49,7 @@ public class ArraysStepDef extends BaseClass{
 		List<List<String>>data=pythonCode.cells();
 		arrayPage.enterPythonCode(data.get(0).get(0));
 	}
-	
-//	@When("click on array run button")
-//	public void click_on_array_run_button() {
-//	    arrayPage.clickOnArrayRunbtn();
-//	}
-	
+		
 	@Then("The result should be displayed below the run button")
 	public void the_result_should_be_displayed_below_the_run_button() {
 		Allure.addAttachment("Python output", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
@@ -107,12 +91,6 @@ public class ArraysStepDef extends BaseClass{
 		arrayPage.clickOnSearchTheArrayLink();
 	}
 	
-//	@When("user clear the text and enter the Python code print\\({string})")
-//	public void user_clear_the_text_and_enter_the_python_code_print(String sheetName, int rowNumber) throws InterruptedException, InvalidFormatException, IOException {
-//		arrayPage= new ArraysPage(Helper.getDriver());
-//		arrayPage.enterCodePractice(sheetName, rowNumber);
-//	}
-	
 	@When("user click on Max Consecutive Ones")
 	public void user_click_on_max_consecutive_ones() {
 		arrayPage= new ArraysPage(Helper.getDriver());
@@ -130,12 +108,6 @@ public class ArraysStepDef extends BaseClass{
 		arrayPage= new ArraysPage(Helper.getDriver());
 		arrayPage.clickOnSortedArrayLink();
 	}
-	
-//	@When("^user clear the text and enter the examples Python code (.*)$")
-//	public void user_clear_the_text_and_enter_the_examples_python_code_print(String PythonCode) throws InterruptedException {
-//		System.out.println(PythonCode);
-//		arrayPage.enterCodePractice(s);
-//	}
 	
 	@When("user clear the text and enter the Python code in tryEditor from sheet {string} and {int}")
 	public void user_clear_the_text_and_enter_the_python_code_in_try_editor_from_sheet_and(String sheetName, Integer rowNumber) throws InvalidFormatException, IOException {

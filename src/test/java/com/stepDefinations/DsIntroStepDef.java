@@ -46,12 +46,6 @@ WebDriver driver = Helper.getDriver();
 	    loginPage.clickLogInBtn();
 	}
 	
-//	@Given("The user is on home page as title {string}")
-//	public void the_user_is_on_home_page_as_title(String title) {
-//		  Assert.assertEquals(title, Helper.getDriver().getTitle());
-//			//ds_IntroPage =new DS_IntroPage(Helper.getDriver());
-//	}
-	
 	@When("user click on Get started button in Data Structure")
 	public void user_click_on_get_started_button_in_data_structure() throws InterruptedException {
 		ds_IntroPage.clickGetStartedDs();
@@ -67,27 +61,12 @@ WebDriver driver = Helper.getDriver();
 		ds_IntroPage.clickTimeComplexityLink();
 	}
 	
-//	@Then("It should navigate to corresponding  page with title {string}")
-//	public void it_should_navigate_to_corresponding_page_with_title(String title) {
-//		 Assert.assertEquals(title, Helper.getDriver().getTitle());
-//	}
-	
-//	@When("user click on Try here")
-//	public void user_click_on_try_here() throws InterruptedException {
-//		ds_IntroPage.clickTryHereLink();	   
-//	}
-	
 	@When("user enter the python code")
 	public void user_enter_the_python_code(io.cucumber.datatable.DataTable pythonCode) throws InterruptedException {
 		ds_IntroPage=new DS_IntroPage(Helper.getDriver());
 		 List<List<String>>data=pythonCode.cells();
 		   ds_IntroPage.enterCode(data.get(0).get(0)); 
 	}	
-	
-//	@When("click on run button")
-//	public void click_on_run_button() throws InterruptedException {
-//		ds_IntroPage.clickRunBtn();
-//	}
 	
 	@Then("user is navigated to home page {string}")
 	public void user_is_navigated_to_home_page(String url) {
