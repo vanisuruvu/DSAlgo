@@ -1,7 +1,7 @@
 Feature: Stack
-@stack
+#@stack
  #Scenario: Launch the url
-	#Given user open browser and launch the url "https://dsportalapp.herokuapp.com/"
+#	Given user open browser and launch the url "https://dsportalapp.herokuapp.com/"
    #When user click  "Get started" button
    #And click on signin link
    #When user enters  "abcde12ab3@gmail.com" "pranav@12"
