@@ -34,7 +34,7 @@ Scenario: User validate Creating Linked List page
 @linkedlist   
 Scenario: User validate Types of Linked List page
     When user click on Types of Linked List
-   And It should navigate to corresponding page with title "Assessment"
+   And It should navigate to corresponding page with title "Types of Linked List"
     When user clicks on Try here
     Then user should navigate to corresponding page with title "Assessment"
     When user enters the Python code
