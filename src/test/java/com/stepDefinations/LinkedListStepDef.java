@@ -50,6 +50,12 @@ WebDriver driver = Helper.getDriver();
 	    listPage.clickCreatingLinkedListLink();
 	}
 	
+	@Then("user will navigate to corresponding page with title {string}")
+	public void user_will_navigate_to_corresponding_page_with_title(String title) {
+		Assert.assertEquals(title, Helper.getDriver().getTitle());
+
+	}
+	
 	@When("user click on Types of Linked List")
 	public void user_click_on_types_of_linked_list() {
 		listPage = new LinkedListPage(Helper.getDriver());

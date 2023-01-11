@@ -63,9 +63,8 @@ public class LoginStepDef extends BaseClass {
 	public void user_will_click_on_login_button() throws InterruptedException {
 	    loginPage.clickLogInBtn();
 	}
-	
-	
 
+	
 	@Then("user should be successfully able to see the messgae {string}")
 	public void user_should_be_successfully_able_to_see_the_messgae(String string) {
 		String actualText = loginPage.validateSuccessLoginMsg();
