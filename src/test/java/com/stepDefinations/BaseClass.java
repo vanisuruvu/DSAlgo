@@ -8,6 +8,7 @@ import com.pageObjects.LoginPage;
 import com.pageObjects.RegisterPage;
 import com.pageObjects.StackPage;
 import com.pageObjects.StartPage;
+import com.pageObjects.TreePage;
 
 public class BaseClass {
 	public 	StartPage sp;
@@ -18,7 +19,7 @@ public class BaseClass {
 	public ArraysPage arrayPage;
 	public StackPage stackPage;
 	public GraphPage graphPage;
-	
+	public TreePage treePage;
 	
 
 		

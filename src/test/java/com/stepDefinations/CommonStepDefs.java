@@ -9,6 +9,7 @@ import com.pageObjects.ArraysPage;
 import com.pageObjects.DS_IntroPage;
 import com.pageObjects.LinkedListPage;
 import com.pageObjects.StackPage;
+import com.pageObjects.TreePage;
 import com.utils.Helper;
 import com.utils.Loggerload;
 
@@ -33,6 +34,7 @@ public class CommonStepDefs extends BaseClass {
 	public void the_user_is_at_home_page_with_title(String title) {
 		listPage = new LinkedListPage(driver);	
 		stackPage = new StackPage(driver);
+		treePage = new TreePage(driver);
 		System.out.println("title of page :"+driver.getTitle());
 		Assert.assertEquals(title, driver.getTitle());
 

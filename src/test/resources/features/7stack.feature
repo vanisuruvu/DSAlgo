@@ -70,4 +70,4 @@ Scenario: validating Stack operationsInStack  page
       |hello|
     And click on run button
     Then user should get error message 
-	Then User navigate back to page as title "https://dsportalapp.herokuapp.com/stack/"
+	Then User navigate back to page as title "https://dsportalapp.herokuapp.com/home"
