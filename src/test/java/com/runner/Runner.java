@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(features="src/test/resources/features"
 ,glue ={"com.stepDefinations","com.utils.Helper", "appHooks"}
-,monochrome=true,dryRun = false,   // tags="@arrays",
+,monochrome=true,dryRun = false,   
 //tags = "@arrays",
 
 plugin= {"pretty","html:target/cucumber.html"
