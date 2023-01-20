@@ -151,16 +151,16 @@ public class RegisterPage {
 	
 	public String validatecompare() throws InterruptedException {
 		//Thread.sleep(3000);
-		String msg = "";
-		String usr=usernameText.getText();
-		String pwd1=passwordText1.getText();
-		String pwd2=passwordText2.getText();
-		boolean a=(usr==pwd1);
-	    boolean b =(usr==pwd2);
-		if(a&b==true) {
-			msg = passwordMismatch.getText();
-		}
-		return msg;
+//		String msg = "";
+//		String usr=usernameText.getText();
+//		String pwd1=passwordText1.getText();
+//		String pwd2=passwordText2.getText();
+//		boolean a=(usr==pwd1);
+//	    boolean b =(usr==pwd2);
+//		if(a&b) {
+//			msg = passwordMismatch.getText();
+//		}
+		return passwordMismatch.getText();
 	}
 	
 	

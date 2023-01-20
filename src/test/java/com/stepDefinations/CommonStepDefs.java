@@ -8,6 +8,7 @@ import org.testng.Assert;
 import com.pageObjects.ArraysPage;
 import com.pageObjects.DS_IntroPage;
 import com.pageObjects.LinkedListPage;
+import com.pageObjects.QueuePage;
 import com.pageObjects.StackPage;
 import com.pageObjects.TreePage;
 import com.utils.Helper;
@@ -43,6 +44,7 @@ public class CommonStepDefs extends BaseClass {
 	@When("click on run button")
 	public void click_on_run_button() throws InterruptedException {
 		ds_IntroPage = new DS_IntroPage(driver);
+		queuePage = new QueuePage(driver);
 		ds_IntroPage.clickRunBtn();
 	}
 
