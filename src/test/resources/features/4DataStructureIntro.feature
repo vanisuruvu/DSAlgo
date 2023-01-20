@@ -1,3 +1,4 @@
+@ds  
 Feature: Data Structure Intro
 
 	Background:
@@ -7,8 +8,7 @@ Feature: Data Structure Intro
     When user enters  "abcde12ab3@gmail.com" "pranav@12"
     And user click on login button
     
-	@ds  
-	Scenario:
+	Scenario: Data Structure Intro Page Validation
  		Given The user is at home page with title "NumpyNinja"
     When user click on Get started button in Data Structure
     Then user will successfully navigate to corresponding page with title "Data Structures-Introduction"
