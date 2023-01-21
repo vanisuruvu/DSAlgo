@@ -1,12 +1,12 @@
 @tree
 Feature: Tree
  
-#  Scenario: Launch the url
+  #Scenario: Launch the url
 #	Given user open browser and launch the url "https://dsportalapp.herokuapp.com/"
-#   When user click  "Get started" button
-#   And click on signin link
-#   When user enters  "abcde12ab3@gmail.com" "pranav@12"
-#   And user click on login button
+   #When user click  "Get started" button
+   #And click on signin link
+   #When user enters  "abcde12ab3@gmail.com" "pranav@12"
+   #And user click on login button
 
 @tree   
    Scenario: Validate overview of trees link

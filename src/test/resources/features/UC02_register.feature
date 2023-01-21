@@ -7,6 +7,7 @@ Feature: Register
     And clicks on register link
     Then user should successfully able to see register page title "Registration"
 
+	@register_001
   Scenario Outline: Register validation with valid inputs
     When user enter the "<username>", "<password>", "<passwordConfirmation>"
     And user click on register button
@@ -18,12 +19,13 @@ Feature: Register
       |abcde12ab3@gmail.com|pranav@12|pranav@12|
       |swatiii1ab23@gmail.com|prathap@12|prathap@12|
 
+	@register_002
   Scenario: Register validation with invalid inputs
     When user click register link without entering anything
     Then user should get fillout field error message "Please fill out this field." below username field.
     
     
-
+	@register_003
   Scenario Outline: Register validation with invalid inputs/blank fields
     When user enters "<username>" with username and click on register button
     Then user should get fillout field error message "Please fill out this field." 
@@ -33,7 +35,7 @@ Feature: Register
       | username        | password  | passwordConfirmation |
       | swati@gmail.com |           |                      |
       
-
+@register_004
 Scenario Outline: Register validation with invalid inputs/blank fields
     When user enters "<username>" "<password>"  with username and password fields  and click on register button
     Then user should get error message password confirmation "Please fill out this field."
@@ -41,6 +43,7 @@ Scenario Outline: Register validation with invalid inputs/blank fields
       | username        | password  | passwordConfirmation |
       | swati@gmail.com | abcde@123 |                      |
     
+@register_005
 Scenario Outline: Register validation with invalid inputs/blank fields
     When user enters  "<password>" "<passwordconfirmation>" with password,password confirmation fields blank inputs and click on register button
     Then user should get error message user name "Please fill out this field." 
@@ -49,6 +52,7 @@ Scenario Outline: Register validation with invalid inputs/blank fields
       | username        | password  | passwordConfirmation |    
       |                 | abc@123   | abc@123              |
   
+  @register_006
   Scenario Outline: Register validation with invalid inputs/blank fields
     When user enters  "<password>"  with password field  and click on register button
     Then user should get error message under user name  "Please fill out this field." 
@@ -57,7 +61,7 @@ Scenario Outline: Register validation with invalid inputs/blank fields
       | username        | password  | passwordConfirmation |
       |                 | abc@123   |                      |
  
-      
+@register_007
 Scenario Outline: Register validation with invalid inputs/blank fields
     When user enters "<passwordconfirmation>" with passwordconfirmation and click on register button
     Then user will get error message username "Please fill out this field." 

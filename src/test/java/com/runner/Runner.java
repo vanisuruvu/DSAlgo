@@ -6,10 +6,10 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(features="src/test/resources/features"
 ,glue ={"com.stepDefinations","com.utils.Helper", "appHooks"}
 ,monochrome=true,dryRun = false ,   
-//tags = "@compareUnPwd",
+//tags = "@stack",
 
 plugin= {"pretty","html:target/cucumber.html",
-		"html:target/HtmlReports.html",
+		"json:target/cucumber-reports/reports.json", 
 		"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
 		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 })

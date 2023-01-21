@@ -15,12 +15,19 @@ import com.utils.Helper;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import com.utils.Loggerload;;
+import com.utils.Loggerload;
 
-public class QueueStepDef extends BaseClass{
+import context.TestContext;;
 
-	WebDriver driver = Helper.getDriver();
+public class QueueStepDef {
+
 	String expectedMsg;
+	WebDriver driver = Helper.getDriver();
+	TestContext testContext;
+	
+	public QueueStepDef(TestContext testContext) {
+		this.testContext = testContext;
+	}
 	
 	@Given("The user is in home page with title {string}")
 	public void the_user_is_in_home_page_with_title(String title) {
@@ -29,45 +36,43 @@ public class QueueStepDef extends BaseClass{
 	
 	@When("user click on Get Started button on Queue")
 	public void user_click_on_get_started_button_on_queue() {
-		queuePage = new QueuePage(driver);
-		queuePage.clickOnGetStartedQueue();
+		testContext.initializePageObject(driver);
+		testContext.getQueuePage().clickOnGetStartedQueue();
 		
 	}
 	
 	@When("user click on Implementation of Queue in Python")
 	public void user_click_on_implementation_of_queue_in_python() {
-		queuePage = new QueuePage(driver);
-		queuePage.clickOnImplementationOfQueue();
+		testContext.getQueuePage().clickOnImplementationOfQueue();
 	}
 	
 	@When("user click on Queue Operations")
 	public void user_click_on_queue_operations() {
-	    queuePage = new QueuePage(driver);
-	    queuePage.clickOnQueueOperations();
+		testContext.initializePageObject(driver);
+		testContext.getQueuePage().clickOnQueueOperations();
 	}
 	
 	@When("user click on Implementation using collections.deque")
 	public void user_click_on_implementation_using_collections_deque() {
-		queuePage = new QueuePage(driver);
-		queuePage.clickOnImplentationCollection();
+		testContext.initializePageObject(driver);
+		testContext.getQueuePage().clickOnImplentationCollection();
 	}
 	
 	@When("user click on Implementation using array")
 	public void user_click_on_implementation_using_array() {
-	    queuePage = new QueuePage(driver);
-	    queuePage.clickOnImplementationArray();
+		testContext.initializePageObject(driver);
+		testContext.getQueuePage().clickOnImplementationArray();
 	}
 
 	@Given("The user is in Editor page and navigates to QueueOp page")
 	public void the_user_is_in_editor_page_and_navigates_to_queue_op_page() {
-		queuePage = new QueuePage(driver);
-		queuePage.navigateToQPracQuesPage();
+		testContext.initializePageObject(driver);
+		testContext.getQueuePage().navigateToQPracQuesPage();
 	}
 	
 	@When("the user clicks on Practice Questions")
 	public void the_user_clicks_on_practice_questions() {
-	    queuePage = new QueuePage(driver);
-		queuePage.clickOnPracticeQuestionsLink();
+		testContext.getQueuePage().clickOnPracticeQuestionsLink();
 	}
 	
 	@Then("The user is directed to Practice page")
@@ -79,29 +84,27 @@ public class QueueStepDef extends BaseClass{
 
 	@Given("The user is in a page having an Editor with a Run button to test")
 	public void the_user_is_in_a_page_having_an_editor_with_a_run_button_to_test() {
-	    queuePage = new QueuePage(driver);
-		queuePage.navigateToEditorUrl();
+		testContext.initializePageObject(driver);
+		testContext.getQueuePage().navigateToEditorUrl();
 	}
 	
 	@When("The user enters valid python code in Editor from sheet {string} and {int}")
 	public void the_user_enters_valid_python_code_in_editor_from_sheet_and(String sheetName, Integer rowNum) throws InvalidFormatException, IOException {
-		queuePage = new QueuePage(driver);
-		queuePage.enterPythonCode(sheetName, rowNum);
-		expectedMsg = queuePage.getExpectedResult(sheetName, rowNum);
+		testContext.getQueuePage().enterPythonCode(sheetName, rowNum);
+		expectedMsg = testContext.getQueuePage().getExpectedResult(sheetName, rowNum);
 	}
 	
 	@Then("The user is presented with the result after run button is clicked")
 	public void the_user_is_presented_with_the_result_after_run_button_is_clicked() {
 		Loggerload.info("Expected result - Excel Sheet :  " + expectedMsg);
-		String actualMsg = queuePage.getActualResult();
+		String actualMsg = testContext.getQueuePage().getActualResult();
 		Loggerload.info("Actual result  :" + actualMsg);
 		assertEquals(actualMsg, expectedMsg);
 	}
 
 	@When("The user enters invalid python code in Editor from sheet {string} and {int}")
 	public void the_user_enters_invalid_python_code_in_editor_from_sheet_and(String sheetName, Integer rowNum) throws InvalidFormatException, IOException {
-		queuePage = new QueuePage(driver);
-		queuePage.enterPythonCode(sheetName, rowNum);
+		testContext.getQueuePage().enterPythonCode(sheetName, rowNum);
 	}
 
 }

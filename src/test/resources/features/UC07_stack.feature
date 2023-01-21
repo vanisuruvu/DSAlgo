@@ -1,12 +1,14 @@
+@stack
 Feature: Stack
-#@stack
+
  #Scenario: Launch the url
 #	Given user open browser and launch the url "https://dsportalapp.herokuapp.com/"
    #When user click  "Get started" button
    #And click on signin link
    #When user enters  "abcde12ab3@gmail.com" "pranav@12"
    #And user click on login button
-@stack
+
+@Stack_001
 Scenario: validating Stack operationsInStack  page
 		Given The user is at home page with title "NumpyNinja"
     When user click on Get Started button in Stack section

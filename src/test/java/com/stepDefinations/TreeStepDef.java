@@ -8,28 +8,33 @@ import org.openqa.selenium.WebDriver;
 import com.pageObjects.TreePage;
 import com.utils.Helper;
 
+import context.TestContext;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class TreeStepDef  extends BaseClass {
+public class TreeStepDef {
 
 	WebDriver driver = Helper.getDriver();
+	TestContext testContext;
+	
+	public TreeStepDef(TestContext testContext) {
+		this.testContext = testContext;
+	}
 	
 	@When("user click on Get Started button in tree section")
 	public void user_click_on_get_started_button_in_tree_section() {
-		treePage = new TreePage(Helper.getDriver());	
-		treePage.clickGetStarted();
+			
+		testContext.getTreePage().clickGetStarted();
 	}
 	@When("user click on overview of Trees")
 	public void user_click_on_overview_of_trees() {
-	    treePage.clickoverviewOfTreeslink();
+		testContext.getTreePage().clickoverviewOfTreeslink();
 	}
 	
 	@When("user enters the Python code in text editor")
 	public void user_enters_the_python_code_in_text_editor(io.cucumber.datatable.DataTable pythonCode) throws InterruptedException {
-		treePage=new TreePage(Helper.getDriver());
 		List<List<String>>data=pythonCode.cells();
-		treePage.enterCode(data.get(0).get(0));
+		testContext.getTreePage().enterCode(data.get(0).get(0));
 	}
 	
 	@Then("User navigate back to tree page {string}")
@@ -39,75 +44,73 @@ public class TreeStepDef  extends BaseClass {
 	
 	@When("user click on Terminologies")
 	public void user_click_on_terminologies() {
-		treePage = new TreePage(Helper.getDriver());
-	    treePage.clickTerminologiesLink();
+		testContext.initializePageObject(driver);
+		testContext.getTreePage().clickTerminologiesLink();
 	}
 	
 	@When("user click on Types of Trees")
 	public void user_click_on_types_of_trees() {
-		treePage = new TreePage(Helper.getDriver());
-	    treePage.clickTypesOfTreesLink();
+		testContext.initializePageObject(driver);
+		testContext.getTreePage().clickTypesOfTreesLink();
 	}
 	
 	@When("user click on Tree Traversals")
 	public void user_click_on_tree_traversals() {
-		treePage = new TreePage(Helper.getDriver());
-	    treePage.clickTreeTraversalsLink();
+		testContext.initializePageObject(driver);
+		testContext.getTreePage().clickTreeTraversalsLink();
 	}
 	
 	@When("user click on Traversals-Illustration")
 	public void user_click_on_traversals_illustration() {
-		treePage = new TreePage(Helper.getDriver());
-	    treePage.clickTraversalsIllustrationLink();
+		testContext.initializePageObject(driver);
+		testContext.getTreePage().clickTraversalsIllustrationLink();
 	}
 	
 	@When("user click on Binary Trees")
 	public void user_click_on_binary_trees() {
-		treePage = new TreePage(Helper.getDriver());
-	    treePage.clickBinaryTreesLink();
+		testContext.initializePageObject(driver);
+		testContext.getTreePage().clickBinaryTreesLink();
 	}
 	
 	@When("user click on Types of Binary Trees")
 	public void user_click_on_types_of_binary_trees() {
-		treePage = new TreePage(Helper.getDriver());
-	    treePage.clickTypesOfBinaryTreesLink();
+		testContext.initializePageObject(driver);
+		testContext.getTreePage().clickTypesOfBinaryTreesLink();
 	}
 	
 	@When("user click on Binary Tree Traversals")
 	public void user_click_on_binary_tree_traversals() {
-		treePage = new TreePage(Helper.getDriver());
-	    treePage.clickBinaryTreeTraversalsLink();
+		testContext.initializePageObject(driver);
+		testContext.getTreePage().clickBinaryTreeTraversalsLink();
 	}
 	
 	@When("user click on Implementation in Python")
 	public void user_click_on_implementation_in_python() {
-		treePage = new TreePage(Helper.getDriver());
-	    treePage.clickImplementationInPythonLink();
+		testContext.initializePageObject(driver);
+		testContext.getTreePage().clickImplementationInPythonLink();
 	}
 	
 	@When("user click on Applications of Binary trees")
 	public void user_click_on_applications_of_binary_trees() {
-		treePage = new TreePage(Helper.getDriver());
-	    treePage.clickApplicationsOfBinaryTreesLink();
+		testContext.initializePageObject(driver);
+		testContext.getTreePage().clickApplicationsOfBinaryTreesLink();
 	}
 	
 	@When("user click on Implementation of Binary Trees")
 	public void user_click_on_implementation_of_binary_trees() {
-		treePage = new TreePage(Helper.getDriver());
-	    treePage.clickImplementationOfBinaryTreesLink();
+		testContext.initializePageObject(driver);
+		testContext.getTreePage().clickImplementationOfBinaryTreesLink();
 	}
 	
 	@When("user click on Binary Search Trees")
 	public void user_click_on_binary_search_trees() {
-		treePage = new TreePage(Helper.getDriver());
-	    treePage.clickBinarySearchTreesLink();
+		testContext.initializePageObject(driver);
+		testContext.getTreePage().clickBinarySearchTreesLink();
 	}
 	
 	@When("user click onImplementation Of BST")
 	public void user_click_on_implementation_of_bst() {
-		treePage = new TreePage(Helper.getDriver());
-	    treePage.clickImplementationOfBSTLink();
+		testContext.initializePageObject(driver);
+		testContext.getTreePage().clickImplementationOfBSTLink();
 	}
-	
-	
 }
