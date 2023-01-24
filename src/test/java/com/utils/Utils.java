@@ -114,7 +114,11 @@ public class Utils {
 
 	public static boolean enterPythonCode(WebElement element, String code) {
 		Loggerload.info("Before sending keys to " + element.getText() );
-		new Actions(driver).sendKeys(element, code).perform();
+		try {
+			new Actions(driver).sendKeys(element, code).perform();
+		} catch(Exception e) {
+			element.sendKeys(code);
+		}
 		return true;
 	}
 	
