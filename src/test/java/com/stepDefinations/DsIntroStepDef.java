@@ -16,7 +16,6 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class DsIntroStepDef {
-	WebDriver driver = Helper.getDriver();
 	TestContext testContext;
 	
 	public DsIntroStepDef(TestContext testContext) {
@@ -25,7 +24,7 @@ public class DsIntroStepDef {
 	
 	@Given("user open browser and launch the url {string}")
 	public void user_open_browser_and_launch_the_url(String url) {
-		testContext.initializePageObject(driver);
+		testContext.initializePageObject(testContext.getDriver());
 		Helper.openPage(url); 		
 	}
 	

@@ -5,10 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.stepDefinations.BaseClass;
 import com.utils.Utils;
 
-public class TreePage extends BaseClass  {
+public class TreePage {
 	
 	 public TreePage(WebDriver webDriver) {
 		 

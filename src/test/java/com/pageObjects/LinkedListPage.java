@@ -5,12 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.stepDefinations.BaseClass;
 import com.utils.Loggerload;
 import com.utils.Utils;
 
-public class LinkedListPage extends BaseClass
-{
+public class LinkedListPage {
 	public LinkedListPage(WebDriver webDriver) {
 
 		PageFactory.initElements(webDriver, this);

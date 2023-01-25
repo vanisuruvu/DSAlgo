@@ -22,8 +22,6 @@ import io.cucumber.java.en.When;
 
 public class CommonStepDefs {
 
-
-	WebDriver driver = Helper.getDriver();
 	Scenario s;
 	TestContext testContext;
 	
@@ -40,9 +38,9 @@ public class CommonStepDefs {
 	@Given("The user is at home page with title {string}")
 	public void the_user_is_at_home_page_with_title(String title) {
 		
-		testContext.initializePageObject(driver);
-		System.out.println("title of page :"+driver.getTitle());
-		Assert.assertEquals(title, driver.getTitle());
+		testContext.initializePageObject(testContext.getDriver());
+		System.out.println("title of page :"+testContext.getDriver().getTitle());
+		Assert.assertEquals(title, testContext.getDriver().getTitle());
 
 	}
 

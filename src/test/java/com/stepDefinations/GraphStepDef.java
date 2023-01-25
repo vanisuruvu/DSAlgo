@@ -2,23 +2,15 @@ package com.stepDefinations;
 
 import static org.testng.Assert.assertEquals;
 
-import org.openqa.selenium.WebDriver;
-
-import com.pageObjects.ArraysPage;
-import com.pageObjects.GraphPage;
-import com.utils.Helper;
-
-import io.cucumber.java.Scenario;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 import com.utils.Loggerload;
 
 import context.TestContext;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class GraphStepDef {
 
-	WebDriver driver = Helper.getDriver();
 	TestContext testContext;
 	
 	public GraphStepDef(TestContext testContext) {
@@ -27,7 +19,7 @@ public class GraphStepDef {
 	
 	@When("user click on Graph Representations")
 	public void user_click_on_graph_representations() {
-		testContext.initializePageObject(driver);
+		testContext.initializePageObject(testContext.getDriver());
 		testContext.getGraphPage().clickOnGraphRepresentation();
 	}
 	
@@ -48,7 +40,7 @@ public class GraphStepDef {
 	
 	@Given("The user is in Editor page and navigates to graph representations page")
 	public void the_user_is_in_editor_page_and_navigates_to_graph_representations_page() {
-		testContext.initializePageObject(driver);
+		testContext.initializePageObject(testContext.getDriver());
 		testContext.getArrayPage().navigateTo("graphrepresentationsurl");
 	}
 	
@@ -59,7 +51,7 @@ public class GraphStepDef {
 	
 	@Then("The user is directed to graph Practice page")
 	public void the_user_is_directed_to_graph_practice_page() {
-		String Title = driver.getTitle();
+		String Title = testContext.getDriver().getTitle();
 		Loggerload.info("Title of current page is :" + Title);
 		assertEquals(Title, "Practice Questions", "Title not matched");
 	}

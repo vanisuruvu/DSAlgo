@@ -1,10 +1,7 @@
 package com.stepDefinations;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
-import com.pageObjects.LoginPage;
-import com.pageObjects.StartPage;
 import com.utils.Helper;
 
 import context.TestContext;
@@ -14,16 +11,15 @@ import io.cucumber.java.en.When;
 
 public class LoginStepDef {
 	
-	WebDriver driver = Helper.getDriver();
 	TestContext testContext;
-	
+		
 	public LoginStepDef(TestContext testContext) {
 		this.testContext = testContext;
 	}
 	
 	@Given("user opens browser and launch the url{string}")
 	public void user_opens_browser_and_launch_the_url(String url) {
-		testContext.initializePageObject(driver);
+		testContext.initializePageObject(testContext.getDriver());
 		Helper.openPage(url);   
 		
 	    	}

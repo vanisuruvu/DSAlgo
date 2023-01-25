@@ -33,7 +33,7 @@ public class TestContext {
 		return driver;
 	}
 	public void setDriver(WebDriver driver) {
-		this.driver = driver;
+		this.driver = Helper.getDriver();
 	}
 	public StartPage getSp() {
 		return sp;

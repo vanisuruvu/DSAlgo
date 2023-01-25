@@ -6,7 +6,6 @@ import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 
-import com.utils.Helper;
 import com.utils.Loggerload;
 
 import context.TestContext;
@@ -14,7 +13,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class StackStepDef {
-	WebDriver driver = Helper.getDriver();
+	
 	TestContext testContext;
 	
 	public StackStepDef(TestContext testContext) {
@@ -39,7 +38,7 @@ public void user_enter_the_python_code_in_text_editor(io.cucumber.datatable.Data
 @Then("User navigate back to page as title {string}")
 public void user_navigate_back_to_page_as_title(String url) {
 	
-		Helper.getDriver().get(url);
+		testContext.getDriver().get(url);
 	}
 
 @When("user click on Implementation link")

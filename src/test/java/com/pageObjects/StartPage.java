@@ -1,19 +1,16 @@
 package com.pageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.stepDefinations.BaseClass;
 import com.utils.Helper;
 import com.utils.Loggerload;
 import com.utils.Utils;
 
-public class StartPage extends BaseClass {
+public class StartPage {
 	
 	public StartPage(WebDriver webDriver) {
 		PageFactory.initElements(webDriver, this);		
@@ -72,9 +69,10 @@ public class StartPage extends BaseClass {
     }
 	 
 	public void dropDownClick() throws InterruptedException {
-		 Thread.sleep(1000);
+		Thread.sleep(1000);
 		 Loggerload.info("Clicked on  "+dropDownLink.getText()+" drop down");
-		 Utils.webClick(dropDownLink); 
+//		 PageFactory.initElements(Helper.getDriver(), this);
+		 Utils.webClick(dropDownLink);
     }
 	 
 	public void enterDropdownValue(String value) throws InterruptedException {

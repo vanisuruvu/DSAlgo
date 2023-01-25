@@ -27,7 +27,6 @@ import io.qameta.allure.Allure;
 public class ArraysStepDef {
 
 	TestContext testContext;
-	WebDriver driver = Helper.getDriver();
 	
 	public ArraysStepDef(TestContext testContext) {
 		this.testContext = testContext;
@@ -58,30 +57,30 @@ public class ArraysStepDef {
 		
 	@Then("The result should be displayed below the run button")
 	public void the_result_should_be_displayed_below_the_run_button() {
-		Allure.addAttachment("Python output", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
-	    driver.navigate().back();
+		Allure.addAttachment("Python output", new ByteArrayInputStream(((TakesScreenshot) testContext.getDriver()).getScreenshotAs(OutputType.BYTES)));
+	    testContext.getDriver().navigate().back();
 	}
 	
 	@Then("User navigate back")
 	public void user_navigate_back() {
-		driver.navigate().back();
+		testContext.getDriver().navigate().back();
 	}
 	
 	@When("User click on Arrays using list")
 	public void user_click_on_arrays_using_list() {
-		testContext.initializePageObject(driver);
+		testContext.initializePageObject(testContext.getDriver());
 		testContext.getArrayPage().clickOnArrayUsingListLink();
 	}
 	
 	@When("User click on Basic Operations in list")
 	public void user_click_on_basic_operations_in_list() {
-		testContext.initializePageObject(driver);
+		testContext.initializePageObject(testContext.getDriver());
 		testContext.getArrayPage().clickOnBasicOperationsInListsLink();
 	}
 	
 	@When("User click on Applications of Array")
 	public void user_click_on_applications_of_array() {
-		testContext.initializePageObject(driver);
+		testContext.initializePageObject(testContext.getDriver());
 		testContext.getArrayPage().clickOnApplicationsOfArrayLink();
 	}
 	
@@ -92,25 +91,25 @@ public class ArraysStepDef {
 	
 	@When("user click on Search the array")
 	public void user_click_on_search_the_array() {
-		testContext.initializePageObject(driver);
+		testContext.initializePageObject(testContext.getDriver());
 		testContext.getArrayPage().clickOnSearchTheArrayLink();
 	}
 	
 	@When("user click on Max Consecutive Ones")
 	public void user_click_on_max_consecutive_ones() {
-		testContext.initializePageObject(driver);
+		testContext.initializePageObject(testContext.getDriver());
 		testContext.getArrayPage().clickOnMaxConsecutiveLink();
 	}
 	
 	@When("user click on Find Numbers with Even Number of Digits")
 	public void user_click_on_find_numbers_with_even_number_of_digits() {
-		testContext.initializePageObject(driver);
+		testContext.initializePageObject(testContext.getDriver());
 		testContext.getArrayPage().clickOnFindEvenLink();
 	}
 	
 	@When("user click on Find Numbers with Squares of  a Sorted Array")
 	public void user_click_on_find_numbers_with_squares_of_a_sorted_array() {
-		testContext.initializePageObject(driver);
+		testContext.initializePageObject(testContext.getDriver());
 		testContext.getArrayPage().clickOnSortedArrayLink();
 	}
 	
@@ -141,7 +140,7 @@ public class ArraysStepDef {
 	public void the_user_is_on_page_of_after_logged_in(String question, String section) {
 		Loggerload.info("The user is on " + question + "page of " + section + " after logged in");
 		String page_name = question + section.replaceAll("\\s+", "");
-		testContext.initializePageObject(driver);
+		testContext.initializePageObject(testContext.getDriver());
 		testContext.getArrayPage().navigateTo(page_name);
 	}
 	@When("The user enter python code with invalid syntax in tryEditor from sheet {string} and {int}")
@@ -166,7 +165,7 @@ public class ArraysStepDef {
 	
 	@Given("The user is in a page having an tryEditor with a Run button to test")
 	public void the_user_is_in_a_page_having_an_try_editor_with_a_run_button_to_test() {
-		testContext.initializePageObject(driver);
+		testContext.initializePageObject(testContext.getDriver());
 		testContext.getArrayPage().navigateTo("tryeditorurl");
 		Loggerload.info("User redirected to a page having an tryEditor with a Run button to test");
 		String Title = Helper.getTitle();

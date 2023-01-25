@@ -1,28 +1,22 @@
 package com.stepDefinations;
 
-import org.testng.Assert;
-
 import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
-import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
-import com.pageObjects.QueuePage;
-import com.utils.Helper;
-
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 import com.utils.Loggerload;
 
-import context.TestContext;;
+import context.TestContext;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;;
 
 public class QueueStepDef {
 
 	String expectedMsg;
-	WebDriver driver = Helper.getDriver();
 	TestContext testContext;
 	
 	public QueueStepDef(TestContext testContext) {
@@ -31,12 +25,12 @@ public class QueueStepDef {
 	
 	@Given("The user is in home page with title {string}")
 	public void the_user_is_in_home_page_with_title(String title) {
-		Assert.assertEquals(title, driver.getTitle());
+		Assert.assertEquals(title, testContext.getDriver().getTitle());
 	}
 	
 	@When("user click on Get Started button on Queue")
 	public void user_click_on_get_started_button_on_queue() {
-		testContext.initializePageObject(driver);
+		testContext.initializePageObject(testContext.getDriver());
 		testContext.getQueuePage().clickOnGetStartedQueue();
 		
 	}
@@ -48,25 +42,25 @@ public class QueueStepDef {
 	
 	@When("user click on Queue Operations")
 	public void user_click_on_queue_operations() {
-		testContext.initializePageObject(driver);
+		testContext.initializePageObject(testContext.getDriver());
 		testContext.getQueuePage().clickOnQueueOperations();
 	}
 	
 	@When("user click on Implementation using collections.deque")
 	public void user_click_on_implementation_using_collections_deque() {
-		testContext.initializePageObject(driver);
+		testContext.initializePageObject(testContext.getDriver());
 		testContext.getQueuePage().clickOnImplentationCollection();
 	}
 	
 	@When("user click on Implementation using array")
 	public void user_click_on_implementation_using_array() {
-		testContext.initializePageObject(driver);
+		testContext.initializePageObject(testContext.getDriver());
 		testContext.getQueuePage().clickOnImplementationArray();
 	}
 
 	@Given("The user is in Editor page and navigates to QueueOp page")
 	public void the_user_is_in_editor_page_and_navigates_to_queue_op_page() {
-		testContext.initializePageObject(driver);
+		testContext.initializePageObject(testContext.getDriver());
 		testContext.getQueuePage().navigateToQPracQuesPage();
 	}
 	
@@ -77,14 +71,14 @@ public class QueueStepDef {
 	
 	@Then("The user is directed to Practice page")
 	public void the_user_is_directed_to_practice_page() {
-		String Title = driver.getTitle();
+		String Title = testContext.getDriver().getTitle();
 		Loggerload.info("User is in " + Title );
 		assertEquals(Title, "Practice Questions", "Title not matched");
 	}
 
 	@Given("The user is in a page having an Editor with a Run button to test")
 	public void the_user_is_in_a_page_having_an_editor_with_a_run_button_to_test() {
-		testContext.initializePageObject(driver);
+		testContext.initializePageObject(testContext.getDriver());
 		testContext.getQueuePage().navigateToEditorUrl();
 	}
 	

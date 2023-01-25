@@ -14,7 +14,6 @@ import io.cucumber.java.en.When;
 
 public class RegisterStepDef {
 	
-	WebDriver driver = Helper.getDriver();
 	TestContext testContext;
 	
 	public RegisterStepDef(TestContext testContext) {
@@ -23,7 +22,7 @@ public class RegisterStepDef {
 	
 	@Given("user opens browser and launch the url {string}")
 	public void user_opens_browser_and_launch_the_url(String url) {
-		testContext.initializePageObject(driver);
+		testContext.initializePageObject(testContext.getDriver());
 	    Helper.openPage(url);	    
 	}
 	
